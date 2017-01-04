@@ -9,7 +9,7 @@
 #define GPIOF_BASE            (AHB1PERIPH_BASE + 0x1400)
 
 
-/* GPIOH寄存器地址,强制转换成指针 */
+/* GPIOF寄存器地址,强制转换成指针 */
 #define GPIOF_MODER				*(unsigned int*)(GPIOF_BASE+0x00)
 #define GPIOF_OTYPER			*(unsigned int*)(GPIOF_BASE+0x04)
 #define GPIOF_OSPEEDR			*(unsigned int*)(GPIOF_BASE+0x08)
