@@ -797,6 +797,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\sdio\bsp_sdio_sd.c</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FatFs</GroupName>
+          <Files>
             <File>
               <FileName>diskio.c</FileName>
               <FileType>1</FileType>
