@@ -4,7 +4,7 @@
   * @author  fire
   * @version V1.0
   * @date    2015-xx-xx
-  * @brief   恢复选项字节为默认值范例(解除读、写、PCROP保护)
+  * @brief   恢复选项字节为默认值范例(解除读、写)
   ******************************************************************************
   * @attention
   *
@@ -43,8 +43,8 @@ int InternalFlash_Reset(void)
 	FLASH_INFO("\r\n");
 	FLASH_INFO("正在准备恢复的条件，请耐心等待...");
 	
-	//确保把读保护级别设置为LEVEL1，以便恢复PCROP寄存器位
-	//PCROP寄存器位从设置为0时，必须是读保护级别由LEVEL1转为LEVEL0时才有效，
+	//确保把读保护级别设置为LEVEL1，以便恢复
+	//必须是读保护级别由LEVEL1转为LEVEL0时才有效，
 	//否则修改无效
 	FLASH_OB_RDPConfig(OB_RDP_Level_1);
 	
@@ -52,13 +52,11 @@ int InternalFlash_Reset(void)
 	
 	status = FLASH_WaitForLastOperation();
 
-	//设置为LEVEL0并恢复PCROP位		
+	//设置为LEVEL0
 	
 	FLASH_INFO("\r\n");
 	FLASH_INFO("正在擦除内部FLASH的内容，请耐心等待...");
 	
-	//关闭PCROP模式
-	FLASH_OB_PCROPSelectionConfig(OB_PcROP_Disable);
 	FLASH_OB_RDPConfig(OB_RDP_Level_0);
 
 	status =FLASH_OB_Launch();
@@ -189,13 +187,11 @@ void WriteProtect_Test(void)
 void OptionByte_Info(void)
 {
 	uint32_t temp_optcr = *(uint32_t *)OPTCR_BYTE0_ADDRESS;
-	uint32_t temp_optrc1h = *(uint16_t *)OPTCR1_BYTE2_ADDRESS;
 	
 	uint16_t temp;
 	
 	FLASH_INFO("\r\n");
 	FLASH_INFO("选项字节寄存器OPTCR的内容：0x%08X",temp_optcr);
-	FLASH_INFO("选项字节寄存器OPTCR1高16位的内容：0x%04X",temp_optrc1h);
 	
 	
 	//读保护级别
@@ -213,17 +209,19 @@ void OptionByte_Info(void)
 		FLASH_INFO("内部FLASH读保护级别为LEVEL1");
 	}
 	
-	FLASH_DEBUG("\r\n");
-	FLASH_DEBUG("-------------写保的护扇区-------------");
+	FLASH_INFO("\r\n");
+	FLASH_INFO("-------------写保的护扇区-------------");
 	temp = FLASH_OB_GetWRP();
 	if(temp == 0x0FFF)
 	{
-		FLASH_DEBUG("默认值：无读写保护，使用single Bank模式");
-	}
-	else if(temp&(1<<15))
-		FLASH_DEBUG("使用了PCROP代码保护模式");
+		FLASH_INFO("默认值：无读写保护，使用single Bank模式");
+	}	
 	else if(temp&(1<<14))
-		FLASH_DEBUG("使用了dual bank模式");
+		FLASH_INFO("使用了dual bank模式");
+	else
+	{
+		FLASH_INFO("设置了写保护，WRP=0x%x",temp);
+	}
 
 
 	
