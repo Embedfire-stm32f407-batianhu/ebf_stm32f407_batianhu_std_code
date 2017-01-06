@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:秉火  STM32 F429 开发板
+  * 实验平台:秉火  STM32 F407 开发板
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :https://fire-stm32.taobao.com
   *
@@ -38,7 +38,7 @@ int main(void)
   /*初始化USART，配置模式为 115200 8-N-1*/
   Debug_USART_Config(); 
 
-	printf("\r\n 欢迎使用秉火  STM32 F429 开发板。\r\n");	
+	printf("\r\n 欢迎使用秉火  STM32 F407 开发板。\r\n");	
 	
 	/* 使能RNG时钟 */
   RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_RNG, ENABLE);
