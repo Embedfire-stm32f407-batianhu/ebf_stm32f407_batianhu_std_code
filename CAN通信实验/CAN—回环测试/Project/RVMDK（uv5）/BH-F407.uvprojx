@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>RTC—日历</TargetName>
+      <TargetName>CAN</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
@@ -793,14 +793,14 @@
               <FilePath>..\..\User\led\bsp_led.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_rtc.c</FileName>
+              <FileName>bsp_key.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\RTC\bsp_rtc.c</FilePath>
+              <FilePath>..\..\User\key\bsp_key.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_beep.c</FileName>
+              <FileName>bsp_can.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\beep\bsp_beep.c</FilePath>
+              <FilePath>..\..\User\can\bsp_can.c</FilePath>
             </File>
           </Files>
         </Group>
