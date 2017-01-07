@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>COLOR_LED</TargetName>
+      <TargetName>BREATH_LED</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
@@ -783,14 +783,14 @@
               <FilePath>..\..\User\stm32f4xx_it.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_color_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\led\bsp_color_led.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_debug_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\usart\bsp_debug_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_spwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\spwm\bsp_spwm.c</FilePath>
             </File>
           </Files>
         </Group>
