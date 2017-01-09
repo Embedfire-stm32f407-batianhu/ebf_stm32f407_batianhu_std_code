@@ -45,7 +45,7 @@ void Key_GPIO_Config(void)
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	
   /*使用上面的结构体初始化按键*/
-	GPIO_Init(KEY2_GPIO_PORT, &GPIO_InitStructure);
+	GPIO_Init(KEY1_GPIO_PORT, &GPIO_InitStructure);  
   
   
   /*选择按键的引脚*/
