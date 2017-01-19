@@ -29,9 +29,9 @@ uint16_t LCD_Y_LENGTH = ILI9806G_LESS_PIXEL;
 uint8_t LCD_SCAN_MODE =6;
 
 
-static sFONT *LCD_Currentfonts = &Font8x16;  //英文字体
-static uint16_t CurrentTextColor   = BLACK;//前景色
-static uint16_t CurrentBackColor   = WHITE;//背景色
+static sFONT *LCD_Currentfonts = &Font16x32;  //英文字体
+static uint16_t CurrentTextColor   = WHITE;//前景色
+static uint16_t CurrentBackColor   = BLACK;//背景色
 
 __inline void                 ILI9806G_Write_Cmd           ( uint16_t usCmd );
 __inline void                 ILI9806G_Write_Data          ( uint16_t usData );

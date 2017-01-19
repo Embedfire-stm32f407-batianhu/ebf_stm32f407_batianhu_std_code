@@ -65,7 +65,7 @@ void LCD_Direction_Show(void)
 	//轮流展示各个方向模式
 	for(i=0;i<8;i++)
 	{	
-		LCD_SetFont(&Font16x24);
+		LCD_SetFont(&Font16x32);
 		LCD_SetColors(RED,BLACK);
 
 		ILI9806G_Clear(0,0,LCD_X_LENGTH,LCD_Y_LENGTH);	/* 清屏，显示全黑 */
@@ -101,7 +101,7 @@ void LCD_Test(void)
 	
 	testCNT++;	
 	
-	LCD_SetFont(&Font24x32);
+	LCD_SetFont(&Font16x32);
 	LCD_SetColors(RED,BLACK);
 
   ILI9806G_Clear(0,0,LCD_X_LENGTH,LCD_Y_LENGTH);	/* 清屏，显示全黑 */
@@ -112,7 +112,6 @@ void LCD_Test(void)
   ILI9806G_DispStringLine_EN(LINE(4),"Touch driver:GT5688");
   
 	/********显示变量示例*******/
-	LCD_SetFont(&Font24x32);
 	LCD_SetTextColor(GREEN);
 
 	/*使用c标准库把变量转化成字符串*/
@@ -123,7 +122,6 @@ void LCD_Test(void)
 	ILI9806G_DispStringLine_EN(LINE(7),dispBuff);
 
 	/*******显示图形示例******/
-	LCD_SetFont(&Font24x32);
   /* 画直线 */
   
   ILI9806G_ClearLine(LINE(7));/* 清除单行文字 */
@@ -175,14 +173,14 @@ void LCD_Test(void)
 	
   ILI9806G_DispStringLine_EN(LINE(7),"Draw Cir:");
 
-    LCD_SetTextColor(RED);
-    ILI9806G_DrawCircle(150,400,60,1);
+	LCD_SetTextColor(RED);
+	ILI9806G_DrawCircle(150,400,60,1);
 
-    LCD_SetTextColor(GREEN);
-    ILI9806G_DrawCircle(250,400,60,0);
+	LCD_SetTextColor(GREEN);
+	ILI9806G_DrawCircle(250,400,60,0);
 
-    LCD_SetTextColor(BLUE);
-    ILI9806G_DrawCircle(350,400,60,1);
+	LCD_SetTextColor(BLUE);
+	ILI9806G_DrawCircle(350,400,60,1);
 
   Delay(0x2FFFFFF);
   
