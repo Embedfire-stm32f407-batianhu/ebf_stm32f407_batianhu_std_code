@@ -68,7 +68,7 @@ Aux_Data_Typedef  burn_data[] =
   {
     .filename           =   "0:/srcdata/新宋体25.xbf",
     .description        =   "XBF字库文件（emWin使用,新宋体25.xbf）",
-    .start_addr         =   60*4096 ,
+    .start_addr         =   30*4096 ,
     .length             =   649*4096, 
     .burn_option      =  UPDATE,
   },
@@ -77,7 +77,7 @@ Aux_Data_Typedef  burn_data[] =
   {
     .filename           =   "0:/srcdata/新宋体19.xbf",
     .description        =   "XBF字库文件(emWin使用,新宋体19.xbf)",
-    .start_addr         =   710*4096 ,
+    .start_addr         =   680*4096 ,
     .length             =   529*4096, 
     .burn_option      =  UPDATE,
   },
@@ -86,17 +86,17 @@ Aux_Data_Typedef  burn_data[] =
   {
     .filename           =   "0:/srcdata/UNIGBK.BIN",
     .description        =   "文件系统中文支持字库(emWin使用,UNIGBK.BIN)",
-    .start_addr         =   1240*4096 ,
+    .start_addr         =   1210*4096 ,
     .length             =   43*4096,
     .burn_option      =  UPDATE,      
   },
   
   [AUX_GB2312_H2424] =
   {
-    .filename           =   "0:/srcdata/GB2312_H2424.FON",
+    .filename           =   "0:/srcdata/GB2312_H3232.FON",
     .description        =   "裸机中文字库",
-    .start_addr         =   1360*4096 ,
-    .length             =   144*4096,
+    .start_addr         =   1254*4096 ,
+    .length             =   256*4096,
     .burn_option      =  UPDATE,      
   },
   
