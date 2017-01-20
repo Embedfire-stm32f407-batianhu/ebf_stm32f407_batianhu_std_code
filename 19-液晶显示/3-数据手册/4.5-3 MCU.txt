@@ -1,0 +1,151 @@
+ WriteComm(0xFF); // EXTC Command Set enable register 
+WriteData(0xFF); 
+WriteData(0x98); 
+WriteData(0x06); 
+
+//WriteComm(0xBA); // SPI Interface Setting 
+//WriteData(0x60); 
+
+WriteComm(0xBC); // GIP 1 
+WriteData(0x01); 
+WriteData(0x0E); 
+WriteData(0x61); 
+WriteData(0xFB); 
+WriteData(0x10); 
+WriteData(0x10); 
+WriteData(0x0B); 
+WriteData(0x0F); 
+WriteData(0x2E); 
+WriteData(0x73); 
+WriteData(0xFF); 
+WriteData(0xFF); 
+WriteData(0x0E); 
+WriteData(0x0E); 
+WriteData(0x00); 
+WriteData(0x03); 
+WriteData(0x66); 
+WriteData(0x63); 
+WriteData(0x01); 
+WriteData(0x00); 
+WriteData(0x00); 
+
+WriteComm(0xBD); // GIP 2 
+WriteData(0x01); 
+WriteData(0x23); 
+WriteData(0x45); 
+WriteData(0x67); 
+WriteData(0x01); 
+WriteData(0x23); 
+WriteData(0x45); 
+WriteData(0x67); 
+
+WriteComm(0xBE); // GIP 3 
+WriteData(0x00); 
+WriteData(0x21); 
+WriteData(0xAB); 
+WriteData(0x60); 
+WriteData(0x22); 
+WriteData(0x22); 
+WriteData(0x22); 
+WriteData(0x22); 
+WriteData(0x22); 
+
+WriteComm(0xC7); // Vcom 
+WriteData(0x6F); 
+
+WriteComm(0xED); // EN_volt_reg 
+WriteData(0x7F); 
+WriteData(0x0F); 
+WriteData(0x00); 
+
+WriteComm(0xC0); // Power Control 1
+WriteData(0x37); 
+WriteData(0x0B); 
+WriteData(0x0A); 
+
+WriteComm(0xFC); // LVGL 
+WriteData(0x0A); 
+
+/*
+WriteComm(0xDF); // Engineering Setting 
+WriteData(0x00); 
+WriteData(0x00); 
+WriteData(0x00); 
+WriteData(0x00); 
+WriteData(0x00); 
+WriteData(0x20);   
+*/
+
+WriteComm(0xF3); // DVDD Voltage Setting 
+WriteData(0x74); 
+
+WriteComm(0xB4); // Display Inversion Control 
+WriteData(0x00); 
+WriteData(0x00); 
+WriteData(0x00); 
+
+WriteComm(0xF7); // 480x854
+WriteData(0x89); 
+
+WriteComm(0xB1); // Frame Rate 
+WriteData(0x00); 
+WriteData(0x12); 
+WriteData(0x13); 
+
+WriteComm(0xF2); //Panel Timing Control 
+WriteData(0x80); 
+WriteData(0x5B); 
+WriteData(0x40); 
+WriteData(0x28); 
+
+WriteComm(0xC1); // Power Control 2 
+WriteData(0x17); 
+WriteData(0x7D); 
+WriteData(0x7A); 
+WriteData(0x20); 
+
+WriteComm(0xE0); 
+WriteData(0x00); //P1 
+WriteData(0x11); //P2 
+WriteData(0x1C); //P3 
+WriteData(0x0E); //P4 
+WriteData(0x0F); //P5 
+WriteData(0x0C); //P6 
+WriteData(0xC7); //P7 
+WriteData(0x06); //P8 
+WriteData(0x06); //P9 
+WriteData(0x0A); //P10 
+WriteData(0x10); //P11 
+WriteData(0x12); //P12 
+WriteData(0x0A); //P13 
+WriteData(0x10); //P14 
+WriteData(0x02); //P15 
+WriteData(0x00); //P16 
+
+WriteComm(0xE1); 
+WriteData(0x00); //P1 
+WriteData(0x12); //P2 
+WriteData(0x18); //P3 
+WriteData(0x0C); //P4 
+WriteData(0x0F); //P5 
+WriteData(0x0A); //P6 
+WriteData(0x77); //P7 
+WriteData(0x06); //P8 
+WriteData(0x07); //P9 
+WriteData(0x0A); //P10 
+WriteData(0x0E); //P11 
+WriteData(0x0B); //P12 
+WriteData(0x10); //P13 
+WriteData(0x1D); //P14 
+WriteData(0x17); //P15 
+WriteData(0x00); //P16 
+
+WriteComm(0x35); //Tearing Effect ON 
+WriteData(0x00); 
+
+ WriteComm(0x3A);  
+WriteData(0x55); 
+
+WriteComm(0x11); //Exit Sleep 
+Delay(120); 
+WriteComm(0x29); // Display On
