@@ -21,7 +21,7 @@
 #include "./beep/bsp_beep.h"
 
 #ifdef USE_LCD_DISPLAY
-	#include "./lcd/bsp_lcd.h"
+	#include "./lcd/bsp_ili9806g_lcd.h"
 #endif
 
 /**
@@ -41,22 +41,12 @@ int main(void)
 
 #ifdef USE_LCD_DISPLAY	
 	/*=========================液晶初始化开始===============================*/
-	LCD_Init();
-  LCD_LayerInit();
-  LTDC_Cmd(ENABLE);
-	
-	/*把背景层刷黑色*/
-  LCD_SetLayer(LCD_BACKGROUND_LAYER);  
-	LCD_Clear(LCD_COLOR_BLACK);
-	
-  /*初始化后默认使用前景层*/
-	LCD_SetLayer(LCD_FOREGROUND_LAYER); 
-	/*默认设置不透明	，该函数参数为不透明度，范围 0-0xff ，0为全透明，0xff为不透明*/
-  LCD_SetTransparency(0xFF);
-	LCD_Clear(LCD_COLOR_BLACK);
-	/*经过LCD_SetLayer(LCD_FOREGROUND_LAYER)函数后，
-	以下液晶操作都在前景层刷新，除非重新调用过LCD_SetLayer函数设置背景层*/		
-	LCD_SetColors(LCD_COLOR_RED,LCD_COLOR_BLACK);
+	ILI9806G_Init ();         //LCD 初始化
+
+	//其中0、3、5、6 模式适合从左至右显示文字，
+	//不推荐使用其它模式显示文字	其它模式显示文字会有镜像效果			
+	//其中 6 模式为大部分液晶例程的默认显示方向  
+  ILI9806G_GramScan ( 6 );
   /*=========================液晶初始化结束===============================*/
 #endif	
 	/*

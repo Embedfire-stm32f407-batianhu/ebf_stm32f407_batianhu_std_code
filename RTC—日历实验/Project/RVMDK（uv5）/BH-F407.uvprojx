@@ -802,6 +802,21 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\beep\bsp_beep.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_spi_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\flash\bsp_spi_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\font\fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_ili9806g_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\lcd\bsp_ili9806g_lcd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

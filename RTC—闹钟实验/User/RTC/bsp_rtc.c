@@ -18,7 +18,7 @@
 #include "stm32f4xx.h"
 #include "./RTC/bsp_rtc.h"
 #include "./usart/bsp_debug_usart.h"
-
+#include "./lcd/bsp_ili9806g_lcd.h"
 
  /**
   * @brief  设置时间和日期
@@ -86,7 +86,7 @@ void RTC_TimeAndDate_Show(void)
 			RTC_DateStructure.RTC_WeekDay);
 			
 #ifdef USE_LCD_DISPLAY
-			LCD_DisplayStringLineEx(10,50,36,36,(uint8_t *)LCDTemp,0); 
+			ILI9806G_DispStringLine_EN(LINE(2),LCDTemp); 
 #endif			
 			// 打印时间
       printf("The Time :  %0.2d:%0.2d:%0.2d \r\n\r\n", 
@@ -101,7 +101,7 @@ void RTC_TimeAndDate_Show(void)
 			RTC_TimeStructure.RTC_Seconds);
 			
 #ifdef USE_LCD_DISPLAY
-			LCD_DisplayStringLineEx(10,100,36,36,(uint8_t *)LCDTemp,0);
+			ILI9806G_DispStringLine_EN(LINE(5),LCDTemp); 
 #endif			
 	
       (void)RTC->DR;

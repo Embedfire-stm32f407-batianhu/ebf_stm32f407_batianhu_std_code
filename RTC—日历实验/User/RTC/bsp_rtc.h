@@ -4,7 +4,7 @@
 #include "stm32f4xx.h"
 
 //是否使用LCD显示
-//#define USE_LCD_DISPLAY
+#define USE_LCD_DISPLAY
 
 // 时钟源宏定义
 //#define RTC_CLOCK_SOURCE_LSE      

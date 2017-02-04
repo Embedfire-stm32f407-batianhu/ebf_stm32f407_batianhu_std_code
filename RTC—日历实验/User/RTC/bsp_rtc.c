@@ -18,7 +18,7 @@
 #include "stm32f4xx.h"
 #include "./RTC/bsp_rtc.h"
 #include "./usart/bsp_debug_usart.h"
-
+#include "./lcd/bsp_ili9806g_lcd.h"
 
  
 /**
@@ -80,14 +80,14 @@ void RTC_TimeAndDate_Show(void)
 		
 			//液晶显示日期
 			//先把要显示的数据用sprintf函数转换为字符串，然后才能用液晶显示函数显示
-			sprintf(LCDTemp,"The Date :  Y:20%0.2d - M:%0.2d - D:%0.2d - W:%0.2d", 
+			sprintf(LCDTemp,"The Date:Y:20%0.2d-M:%0.2d-D:%0.2d-W:%0.2d", 
 			RTC_DateStructure.RTC_Year,
 			RTC_DateStructure.RTC_Month, 
 			RTC_DateStructure.RTC_Date,
 			RTC_DateStructure.RTC_WeekDay);
 			
 #ifdef USE_LCD_DISPLAY
-			LCD_DisplayStringLineEx(10,50,48,48,(uint8_t *)LCDTemp,0); 
+			ILI9806G_DispStringLine_EN(LINE(2),LCDTemp); 
 #endif			
 			
 			// 打印时间
@@ -103,7 +103,7 @@ void RTC_TimeAndDate_Show(void)
 			RTC_TimeStructure.RTC_Seconds);
 			
 #ifdef USE_LCD_DISPLAY
-			LCD_DisplayStringLineEx(10,100,48,48,(uint8_t *)LCDTemp,0);
+			ILI9806G_DispStringLine_EN(LINE(5),LCDTemp); 
 #endif			
       (void)RTC->DR;
     }
