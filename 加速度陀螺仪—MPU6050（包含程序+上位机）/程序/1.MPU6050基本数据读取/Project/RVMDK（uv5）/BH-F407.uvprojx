@@ -807,6 +807,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\i2c\i2c.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_ili9806g_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\lcd\bsp_ili9806g_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\font\fonts.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

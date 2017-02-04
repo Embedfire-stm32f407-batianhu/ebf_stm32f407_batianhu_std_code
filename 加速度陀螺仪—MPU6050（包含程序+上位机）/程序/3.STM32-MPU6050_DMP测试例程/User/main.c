@@ -22,10 +22,10 @@
 #include "./mpu6050/bsp_mpu_exti.h"
 
 //设置是否使用LCD进行显示，不需要的话把这个宏注释掉即可
-//#define USE_LCD_DISPLAY
+#define USE_LCD_DISPLAY
 
 #ifdef USE_LCD_DISPLAY
- #include "./lcd/bsp_lcd.h"
+ #include "./lcd/bsp_ili9806g_lcd.h"
 #endif
 
 #include "stdio.h"
@@ -325,21 +325,21 @@ static void read_from_mpl(void)
 							
 							#ifdef USE_LCD_DISPLAY
 														
-									sprintf ( cStr, " Pitch :   %.4f   ",Pitch );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
-									LCD_DisplayStringLine(LINE(5),(uint8_t* )cStr);			
+									sprintf ( cStr, "Pitch :  %.4f  ", data[0]*1.0/(1<<16) );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
+									ILI9806G_DispStringLine_EN(LINE(7),cStr);			
 
 									
-									sprintf ( cStr, " Roll  :   %.4f   ", Roll );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
-									LCD_DisplayStringLine(LINE(6),(uint8_t* )cStr);	
+									sprintf ( cStr, "Roll  :  %.4f  ", data[1]*1.0/(1<<16) );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
+									ILI9806G_DispStringLine_EN(LINE(8),cStr);	
 									
-									sprintf ( cStr, " Yaw   :   %.4f   ", Yaw );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
-									LCD_DisplayStringLine(LINE(7),(uint8_t* )cStr);	
+									sprintf ( cStr, "Yaw   :  %.4f  ", data[2]*1.0/(1<<16) );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
+									ILI9806G_DispStringLine_EN(LINE(9),cStr);	
 									
 									/*温度*/
 									mpu_get_temperature(data,(inv_time_t*)&timestamp); 
 									
-									sprintf ( cStr, " Temperature  :   %.2f   ", data[0]*1.0/(1<<16) );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
-									LCD_DisplayStringLine(LINE(8),(uint8_t* )cStr);								
+									sprintf ( cStr, "Temperature  :  %.2f  ", data[0]*1.0/(1<<16) );	//inv_get_sensor_type_euler读出的数据是Q16格式，所以左移16位.
+									ILI9806G_DispStringLine_EN(LINE(10),cStr);	
 									
 
 							#endif
@@ -355,8 +355,8 @@ static void read_from_mpl(void)
 						dmp_get_pedometer_walk_time(&walk_time);				
 
 						#ifdef USE_LCD_DISPLAY
-								sprintf(cStr, " Walked steps :  %ld  steps over  %ld  milliseconds..",step_count,walk_time);
-								LCD_DisplayStringLine(LINE(10),(uint8_t* )cStr);	
+									sprintf(cStr, "Walked steps :  %ld  steps over  %ld  milliseconds..",step_count,walk_time);
+									ILI9806G_DispStringLine_EN(LINE(11),cStr);	 
 						#endif				
 				}
 			}
@@ -855,31 +855,15 @@ int main(void)
 	
   LED_GPIO_Config();
 	
-	#ifdef USE_LCD_DISPLAY	
+#ifdef USE_LCD_DISPLAY	
 		 /*初始化液晶屏*/
-		LCD_Init();
-		LCD_LayerInit();
-		LTDC_Cmd(ENABLE);
-		
-		/*把背景层刷黑色*/
-		LCD_SetLayer(LCD_BACKGROUND_LAYER);  
-		LCD_Clear(LCD_COLOR_BLACK);
-		
-		/*初始化后默认使用前景层*/
-		LCD_SetLayer(LCD_FOREGROUND_LAYER); 
-		/*默认设置不透明	，该函数参数为不透明度，范围 0-0xff ，0为全透明，0xff为不透明*/
-		LCD_SetTransparency(0xFF);
-		LCD_Clear(LCD_COLOR_BLACK);
-		
-			/*设置字体颜色及字体的背景颜色*/
-		LCD_SetColors(LCD_COLOR_RED,LCD_COLOR_BLACK);	
+	ILI9806G_Init ();         //LCD 初始化
+		//其中0、3、5、6 模式适合从左至右显示文字，
+ //不推荐使用其它模式显示文字	其它模式显示文字会有镜像效果			
+ //其中 6 模式为大部分液晶例程的默认显示方向  
+  ILI9806G_GramScan ( 6 );
 
-		/*英文字体*/
-		LCD_SetFont(&Font16x24); 	
-		
-		LCD_DisplayStringLine(LINE(1),(uint8_t* )"           This is a MPU6050 demo       ");			
-
-	#endif
+#endif
 	 /*初始化USART1*/
   Debug_USART_Config();
 
@@ -897,18 +881,18 @@ int main(void)
       MPL_LOGE("Could not initialize gyro.\n");
 			LED_RED; 
 			#ifdef USE_LCD_DISPLAY		
-							/*设置字体颜色及字体的背景颜色*/
-						LCD_SetColors(LCD_COLOR_BLUE,LCD_COLOR_BLACK);	
+								/*设置字体颜色及字体的背景颜色*/
+							LCD_SetColors(BLUE,BLACK);	
 
-						LCD_DisplayStringLine(LINE(2),(uint8_t* )"No MPU6050 detected! ");			//野火自带的16*24显示
-						LCD_DisplayStringLine(LINE(3),(uint8_t* )"Please check the hardware connection! ");			//野火自带的16*24显示
+							ILI9806G_DispStringLine_EN(LINE(4),"No MPU6050 detected! ");			//野火自带的16*24显示
+							ILI9806G_DispStringLine_EN(LINE(5),"Please check the hardware connection! ");			//野火自带的16*24显示
 			#endif
   }
 	else
 	{	
 			LED_GREEN; 
 			#ifdef USE_LCD_DISPLAY
-						LCD_DisplayStringLine(LINE(2),(uint8_t* )" MPU6050 detected! ");			
+							ILI9806G_DispStringLine_EN(LINE(4),"MPU6050 detected! ");			
 			#endif
 	}
 
