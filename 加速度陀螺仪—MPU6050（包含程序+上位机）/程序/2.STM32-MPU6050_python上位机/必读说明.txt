@@ -63,9 +63,9 @@ A.晶振：
 -RTC晶振：32.768KHz
 
 B.各总线运行时钟：
--系统时钟 = SYCCLK = AHB1 = 180MHz
--APB2 = 90MHz 
--APB1 = 45MHz
+-系统时钟 = SYCCLK = AHB1 = 168MHz
+-APB2 = 84MHz 
+-APB1 = 42MHz
 
 C.浮点运算单元：
   使用
