@@ -216,7 +216,7 @@ uint8_t TPAD_Init(void)
 *
 *******************************************************************************/
 //阈值：捕获时间必须大于(tpad_default_val + TPAD_GATE_VAL),才认为是有效触摸.
-#define TPAD_GATE_VAL 	100	
+#define TPAD_GATE_VAL 	50	
 
 uint8_t TPAD_Scan(uint8_t mode)
 {
