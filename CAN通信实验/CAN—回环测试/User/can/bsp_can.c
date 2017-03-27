@@ -67,7 +67,7 @@ static void CAN_NVIC_Config(void)
 		/* Configure one bit for preemption priority */
 		NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
 	 	/*中断设置*/
-		NVIC_InitStructure.NVIC_IRQChannel = CAN_RX_IRQ;	   //CAN1 RX0中断
+		NVIC_InitStructure.NVIC_IRQChannel = CAN_RX_IRQ;	   //CAN RX0中断
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;		   //抢占优先级0
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;			   //子优先级为0
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
@@ -123,7 +123,7 @@ static void CAN_Filter_Config(void)
 	CAN_FilterInitTypeDef  CAN_FilterInitStructure;
 
 	/*CAN筛选器初始化*/
-	CAN_FilterInitStructure.CAN_FilterNumber=14;						//筛选器组0
+	CAN_FilterInitStructure.CAN_FilterNumber=14;						//筛选器组14
 	CAN_FilterInitStructure.CAN_FilterMode=CAN_FilterMode_IdMask;	//工作在掩码模式
 	CAN_FilterInitStructure.CAN_FilterScale=CAN_FilterScale_32bit;	//筛选器位宽为单个32位。
 	/* 使能筛选器，按照标志的内容进行比对筛选，扩展ID不是如下的就抛弃掉，是的话，会存入FIFO0。 */
