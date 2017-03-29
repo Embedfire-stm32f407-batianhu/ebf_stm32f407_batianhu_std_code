@@ -26,16 +26,16 @@
 #include <stdlib.h>
 
 
-//定义变量到SDRAM
+//定义变量到外部SRAM
 uint32_t testValue  =7 ;
-//定义变量到SDRAM
+//定义变量到外部SRAM
 uint32_t testValue2  =0;
 
 
 
-//定义数组到SDRAM
+//定义数组到外部SRAM
 uint8_t testGrup[100]  ={0};
-//定义数组到SDRAM
+//定义数组到外部SRAM
 uint8_t testGrup2[100] ={1,2,3};
 
 
@@ -62,7 +62,7 @@ int main(void)
     //FSMC_SRAM_Init已经在启动文件的Reset_handler中调用，进入main之前已经完成初始化*/
 //    FSMC_SRAM_Init();
 	
- printf("\r\nSCT文件应用——自动分配变量到SDRAM实验\r\n");
+ printf("\r\nSCT文件应用——自动分配变量到外部SRAM实验\r\n");
   
 	printf("\r\n使用“	uint32_t inerTestValue =10; ”语句定义的局部变量：\r\n");
 	printf("结果：它的地址为：0x%x,变量值为：%d\r\n",(uint32_t)&inerTestValue,inerTestValue);

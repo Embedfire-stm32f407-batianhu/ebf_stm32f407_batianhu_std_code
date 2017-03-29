@@ -34,7 +34,7 @@ void Delay(__IO u32 nCount);
 #define __EXRAM  __attribute__ ((section ("EXRAM")))
 
 
-//定义变量到SDRAM
+//定义变量到外部SRAM
 uint32_t testValue __EXRAM =7 ;
 //上述语句等效于：
 //uint32_t testValue  __attribute__ ((section ("EXRAM"))) =7 ;
@@ -44,7 +44,7 @@ uint32_t testValue2  =7 ;
 
 
 
-//定义数组到SDRAM
+//定义数组到外部SRAM
 uint8_t testGrup[3] __EXRAM ={1,2,3};
 //定义数组到SRAM
 uint8_t testGrup2[3] ={1,2,3};
@@ -69,7 +69,7 @@ int main(void)
   /* 初始化串口 */
   Debug_USART_Config();
   
-  printf("\r\nSCT文件应用——自动分配变量到SDRAM实验\r\n");
+  printf("\r\nSCT文件应用——自动分配变量到外部SRAM实验\r\n");
   
 	printf("\r\n使用“	uint32_t inerTestValue =10; ”语句定义的局部变量：\r\n");
 	printf("结果：它的地址为：0x%x,变量值为：%d\r\n",(uint32_t)&inerTestValue,inerTestValue);
@@ -88,7 +88,7 @@ int main(void)
 	printf("结果：它的地址为：0x%x,变量值为：%d，%d,%d\r\n",(uint32_t)&testGrup2,testGrup2[0],testGrup2[1],testGrup2[2]);
 	
 	
-	/*使用malloc从SDRAM中分配空间*/
+	/*使用malloc从外部SRAM中分配空间*/
 	uint32_t *pointer = (uint32_t*)malloc(sizeof(uint32_t)*3); 	
 
 	if(pointer != NULL)

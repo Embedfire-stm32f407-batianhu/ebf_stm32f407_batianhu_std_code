@@ -410,7 +410,7 @@ static void ILI9806G_REG_Config ( void )
 	ILI9806G_Write_Cmd ( 0xB1 );
 	ILI9806G_Write_Data ( 0x00 );
 	ILI9806G_Write_Data ( 0x12 );
-    ILI9806G_Write_Data ( 0x13 );
+    ILI9806G_Write_Data ( 0x20 );
     
 	/* Panel Timing Control (F2h) */
 	ILI9806G_Write_Cmd ( 0xF2 );
