@@ -21,19 +21,7 @@
 #include "./sram/bsp_sram.h"	  
  
 
-typedef enum { FAILED = 0, PASSED = !FAILED} TestStatus;
-
-/* 获取缓冲区的长度 */
-#define TxBufferSize1   (countof(TxBuffer1) - 1)
-#define RxBufferSize1   (countof(TxBuffer1) - 1)
-#define countof(a)      (sizeof(a) / sizeof(*(a)))
-#define  BufferSize (countof(Tx_Buffer)-1)
-
-#define  FLASH_WriteAddress     0x00000
-#define  FLASH_ReadAddress      FLASH_WriteAddress
-#define  FLASH_SectorToErase    FLASH_WriteAddress
-
-   
+  
 /*绝对定位方式访问SRAM,这种方式必须定义成全局变量*/
 uint8_t testValue __attribute__((at(Bank1_SRAM4_ADDR)));
 /*
@@ -110,30 +98,7 @@ int main(void)
     }
 }
 
-/*
- * 函数名：Buffercmp
- * 描述  ：比较两个缓冲区中的数据是否相等
- * 输入  ：-pBuffer1     src缓冲区指针
- *         -pBuffer2     dst缓冲区指针
- *         -BufferLength 缓冲区长度
- * 输出  ：无
- * 返回  ：-PASSED pBuffer1 等于   pBuffer2
- *         -FAILED pBuffer1 不同于 pBuffer2
- */
-TestStatus Buffercmp(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength)
-{
-  while(BufferLength--)
-  {
-    if(*pBuffer1 != *pBuffer2)
-    {
-      return FAILED;
-    }
 
-    pBuffer1++;
-    pBuffer2++;
-  }
-  return PASSED;
-}
 
 void Delay(__IO uint32_t nCount)
 {

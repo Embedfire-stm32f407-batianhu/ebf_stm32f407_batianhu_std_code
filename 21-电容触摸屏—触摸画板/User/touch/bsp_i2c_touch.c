@@ -178,7 +178,7 @@ void I2C_ResetChip(void)
 	  GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;       //设置为下拉，方便初始化
 	  GPIO_Init(GTP_INT_GPIO_PORT, &GPIO_InitStructure);
 
-	  /*初始化GT9157,rst为高电平，int为低电平，则gt9157的设备地址被配置为0xBA*/
+	  /*初始化GT5688,rst为高电平，int为低电平，则gt5688的设备地址被配置为0xBA*/
 
 	  /*复位为低电平，为初始化做准备*/
 	  GPIO_ResetBits (GTP_RST_GPIO_PORT,GTP_RST_GPIO_PIN);
@@ -197,7 +197,7 @@ void I2C_ResetChip(void)
 }
 
 /**
-  * @brief  I2C 外设(GT91xx)初始化
+  * @brief  I2C 外设(GT5xx)初始化
   * @param  无
   * @retval 无
   */

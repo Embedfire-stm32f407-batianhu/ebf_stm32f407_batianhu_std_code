@@ -241,7 +241,7 @@ void FSMC_SRAM_Init(void)
 	/*使能FSMC外设时钟*/
 	RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FSMC,ENABLE);
 
-	//地址建立时间（ADDSET）为1个HCLK
+	//地址建立时间（ADDSET）为1个HCLK,1/168M = 6ns
 	readWriteTiming.FSMC_AddressSetupTime = 0x00;	
 
 	//地址保持时间（ADDHLD）模式A未用到
