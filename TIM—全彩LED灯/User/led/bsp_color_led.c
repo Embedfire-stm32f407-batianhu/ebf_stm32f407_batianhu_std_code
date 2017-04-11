@@ -18,7 +18,7 @@
 #include "./led/bsp_color_led.h"
 
  /**
-  * @brief  配置TIM3复用输出PWM时用到的I/O
+  * @brief  配置TIM复用输出PWM时用到的I/O
   * @param  无
   * @retval 无
   */
