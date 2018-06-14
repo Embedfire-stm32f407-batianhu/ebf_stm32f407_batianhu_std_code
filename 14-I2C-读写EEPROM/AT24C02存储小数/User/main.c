@@ -56,9 +56,9 @@ int main(void)
 	/*读取数据标志位*/
   I2C_EE_BufferRead(&cal_flag, 0, 1);
   
-	 if( cal_flag != 0xAB )	/*若标志等于0xcd，表示之前已有写入数据*/
+	 if( cal_flag != 0xAB )	/*若标志等于0xab，表示之前已有写入数据*/
     {      
-        printf("\r\n没有检测到数据标志，FLASH没有存储数据，即将进行小数写入实验\r\n");
+        printf("\r\n没有检测到数据标志，EEPROM没有存储数据，即将进行小数写入实验\r\n");
         cal_flag =0xAB;
         
         /*写入标志到0地址*/
