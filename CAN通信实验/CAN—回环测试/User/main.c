@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:秉火  STM32 F407 开发板  
+  * 实验平台:野火  STM32 F407 开发板  
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :https://fire-stm32.taobao.com
   *
@@ -50,8 +50,8 @@ int main(void)
 	/*初始化can,在中断接收CAN数据包*/
 	CAN_Config();
 	
-	printf("\r\n 欢迎使用秉火  STM32 F407 开发板。\r\n");
-  printf("\r\n 秉火F407 CAN通讯回环实验例程\r\n");
+	printf("\r\n 欢迎使用野火  STM32 F407 开发板。\r\n");
+  printf("\r\n 野火F407 CAN通讯回环实验例程\r\n");
 	
 	printf("\r\n 实验步骤：\r\n");
 

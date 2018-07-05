@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:秉火  STM32 F407 开发板
+  * 实验平台:野火  STM32 F407 开发板
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :https://fire-stm32.taobao.com
   *
@@ -44,7 +44,7 @@ int main(void)
   RNG_Cmd(ENABLE);
 
  
-	printf("\r\n 欢迎使用秉火  STM32 F407 开发板。\r\n");		
+	printf("\r\n 欢迎使用野火  STM32 F407 开发板。\r\n");		
 	printf("\r\n 全彩LED灯例程\r\n");	  
   printf("\r\n 使用PWM控制RGB灯，可控制输出各种颜色\r\n ");
 

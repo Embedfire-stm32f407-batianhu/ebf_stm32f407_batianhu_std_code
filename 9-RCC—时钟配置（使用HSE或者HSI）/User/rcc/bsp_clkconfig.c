@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:秉火  STM32 F407 开发板  
+  * 实验平台:野火  STM32 F407 开发板  
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :https://fire-stm32.taobao.com
   *
@@ -49,7 +49,7 @@ void HSE_SetSysClock(uint32_t m, uint32_t n, uint32_t p, uint32_t q)
 {
   __IO uint32_t HSEStartUpStatus = 0;
   
-  // 使能HSE，开启外部晶振，秉火F407使用 HSE=25M
+  // 使能HSE，开启外部晶振，野火F407使用 HSE=25M
   RCC_HSEConfig(RCC_HSE_ON);
 	
   // 等待HSE启动稳定
