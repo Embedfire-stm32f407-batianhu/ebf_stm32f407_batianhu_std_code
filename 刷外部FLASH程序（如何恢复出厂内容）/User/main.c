@@ -105,6 +105,8 @@ int main(void)
   while(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==0);
   while(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==1); 
 
+  printf("\r\n 正在进行整片擦除，时间很长，请耐心等候...\r\n");
+  SPI_FLASH_BulkErase();   
     
   //烧录数据到flash的非文件系统区域    
   res = burn_file_sd2flash(burn_data,AUX_MAX_NUM); 
