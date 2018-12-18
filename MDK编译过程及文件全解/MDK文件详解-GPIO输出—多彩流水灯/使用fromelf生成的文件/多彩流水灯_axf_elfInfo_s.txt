@@ -1,0 +1,482 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: ¶à²ÊÁ÷Ë®µÆ.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x08000189
+    Flags: EF_ARM_HASENTRY (0x05000002)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Built with
+    Component: ARM Compiler 5.05 update 2 (build 169) Tool: armasm [4d0f2f]
+    Component: ARM Compiler 5.05 update 2 (build 169) Tool: armlink [4d0f33]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 15
+
+    Program header offset: 334956 (0x00051c6c)
+    Section header offset: 334988 (0x00051c8c)
+
+    Section header string table index: 14
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 2340 bytes (1316 bytes in file)
+    Virtual address: 0x08000000 (Alignment 8)
+
+
+========================================================================
+
+** Section #1 'ER_IROM1' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 1316 bytes (alignment 4)
+    Address: 0x08000000
+
+
+** Section #2 'RW_IRAM1' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 1024 bytes (alignment 8)
+    Address: 0x20000000
+
+
+** Section #3 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1476 bytes
+
+
+** Section #4 '.debug_frame' (SHT_PROGBITS)
+    Size   : 1056 bytes
+
+
+** Section #5 '.debug_info' (SHT_PROGBITS)
+    Size   : 20664 bytes
+
+
+** Section #6 '.debug_line' (SHT_PROGBITS)
+    Size   : 3424 bytes
+
+
+** Section #7 '.debug_loc' (SHT_PROGBITS)
+    Size   : 616 bytes
+
+
+** Section #8 '.debug_macinfo' (SHT_PROGBITS)
+    Size   : 234156 bytes
+
+
+** Section #9 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 617 bytes
+
+
+** Section #10 '.symtab' (SHT_SYMTAB)
+    Size   : 4432 bytes (alignment 4)
+    String table #11 '.strtab'
+    Last local symbol no. 154
+
+    Symbol table .symtab (276 symbols, 154 local)
+
+      #  Symbol Name                Value      Bind  Sec  Type  Vis  Size
+    ========================================================================
+
+      1  $d.realdata                0x08000000   Lc    1   --   De 
+      2  $t                         0x08000188   Lc    1   --   De 
+      3  $d                         0x08000194   Lc    1   --   De 
+      4  $t                         0x0800019c   Lc    1   --   De 
+      5  $d                         0x080001b8   Lc    1   --   De 
+      6  $t                         0x080001c0   Lc    1   --   De 
+      7  $d                         0x080001dc   Lc    1   --   De 
+      8  $t                         0x080001e4   Lc    1   --   De 
+      9  $d                         0x080002d4   Lc    1   --   De 
+     10  $t                         0x080002d8   Lc    1   --   De 
+     11  $d                         0x080002f6   Lc    1   --   De 
+     12  $t                         0x080002fc   Lc    1   --   De 
+     13  $d                         0x080003a8   Lc    1   --   De 
+     14  $t                         0x080003b8   Lc    1   --   De 
+     15  $d                         0x080003fa   Lc    1   --   De 
+     16  $t                         0x0800040c   Lc    1   --   De 
+     17  $d                         0x0800050e   Lc    1   --   De 
+     18  $d.realdata                0x08000514   Lc    1   --   De 
+     19  $d.realdata                0x20000000   Lc    2   --   De 
+     20  ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40xx.s
+                                    0x00000000   Lc  Abs  File  De 
+     21  STACK                      0x20000000   Lc    2  Sect  De   0x400
+     22  RESET                      0x08000000   Lc    1  Sect  De   0x188
+     23  .text                      0x0800019c   Lc    1  Sect  De   0x24
+     24  ..\\..\\Libraries\\CMSIS\\Device\\ST\\STM32F4xx\\Source\\Templates\\system_stm32f4xx.c
+                                    0x00000000   Lc  Abs  File  De 
+     25  ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+                                    0x00000000   Lc  Abs  File  De 
+     26  i.SetSysClock              0x08000300   Lc    1  Sect  De 
+     27  SetSysClock                0x08000301   Lc    1  Code  De   0xa8
+     28  i.SystemInit               0x080003bc   Lc    1  Sect  De 
+     29  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\misc.c
+                                    0x00000000   Lc  Abs  File  De 
+     30  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c
+                                    0x00000000   Lc  Abs  File  De 
+     31  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_adc.c
+                                    0x00000000   Lc  Abs  File  De 
+     32  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c
+                                    0x00000000   Lc  Abs  File  De 
+     33  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_can.c
+                                    0x00000000   Lc  Abs  File  De 
+     34  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c
+                                    0x00000000   Lc  Abs  File  De 
+     35  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_cec.c
+                                    0x00000000   Lc  Abs  File  De 
+     36  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cec.c
+                                    0x00000000   Lc  Abs  File  De 
+     37  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_crc.c
+                                    0x00000000   Lc  Abs  File  De 
+     38  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c
+                                    0x00000000   Lc  Abs  File  De 
+     39  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_cryp.c
+                                    0x00000000   Lc  Abs  File  De 
+     40  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c
+                                    0x00000000   Lc  Abs  File  De 
+     41  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_cryp_aes.c
+                                    0x00000000   Lc  Abs  File  De 
+     42  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c
+                                    0x00000000   Lc  Abs  File  De 
+     43  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_cryp_des.c
+                                    0x00000000   Lc  Abs  File  De 
+     44  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c
+                                    0x00000000   Lc  Abs  File  De 
+     45  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_cryp_tdes.c
+                                    0x00000000   Lc  Abs  File  De 
+     46  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c
+                                    0x00000000   Lc  Abs  File  De 
+     47  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_dac.c
+                                    0x00000000   Lc  Abs  File  De 
+     48  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c
+                                    0x00000000   Lc  Abs  File  De 
+     49  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_dbgmcu.c
+                                    0x00000000   Lc  Abs  File  De 
+     50  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c
+                                    0x00000000   Lc  Abs  File  De 
+     51  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_dcmi.c
+                                    0x00000000   Lc  Abs  File  De 
+     52  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c
+                                    0x00000000   Lc  Abs  File  De 
+     53  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_dma.c
+                                    0x00000000   Lc  Abs  File  De 
+     54  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c
+                                    0x00000000   Lc  Abs  File  De 
+     55  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_exti.c
+                                    0x00000000   Lc  Abs  File  De 
+     56  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c
+                                    0x00000000   Lc  Abs  File  De 
+     57  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_flash.c
+                                    0x00000000   Lc  Abs  File  De 
+     58  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c
+                                    0x00000000   Lc  Abs  File  De 
+     59  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_flash_ramfunc.c
+                                    0x00000000   Lc  Abs  File  De 
+     60  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash_ramfunc.c
+                                    0x00000000   Lc  Abs  File  De 
+     61  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_fmpi2c.c
+                                    0x00000000   Lc  Abs  File  De 
+     62  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmpi2c.c
+                                    0x00000000   Lc  Abs  File  De 
+     63  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_fsmc.c
+                                    0x00000000   Lc  Abs  File  De 
+     64  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c
+                                    0x00000000   Lc  Abs  File  De 
+     65  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_gpio.c
+                                    0x00000000   Lc  Abs  File  De 
+     66  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c
+                                    0x00000000   Lc  Abs  File  De 
+     67  i.GPIO_Init                0x080001fa   Lc    1  Sect  De 
+     68  i.GPIO_ResetBits           0x08000276   Lc    1  Sect  De 
+     69  i.GPIO_SetBits             0x0800027a   Lc    1  Sect  De 
+     70  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_hash.c
+                                    0x00000000   Lc  Abs  File  De 
+     71  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c
+                                    0x00000000   Lc  Abs  File  De 
+     72  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_hash_md5.c
+                                    0x00000000   Lc  Abs  File  De 
+     73  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c
+                                    0x00000000   Lc  Abs  File  De 
+     74  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_hash_sha1.c
+                                    0x00000000   Lc  Abs  File  De 
+     75  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c
+                                    0x00000000   Lc  Abs  File  De 
+     76  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_i2c.c
+                                    0x00000000   Lc  Abs  File  De 
+     77  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c
+                                    0x00000000   Lc  Abs  File  De 
+     78  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_iwdg.c
+                                    0x00000000   Lc  Abs  File  De 
+     79  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c
+                                    0x00000000   Lc  Abs  File  De 
+     80  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_pwr.c
+                                    0x00000000   Lc  Abs  File  De 
+     81  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c
+                                    0x00000000   Lc  Abs  File  De 
+     82  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_qspi.c
+                                    0x00000000   Lc  Abs  File  De 
+     83  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_qspi.c
+                                    0x00000000   Lc  Abs  File  De 
+     84  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_rcc.c
+                                    0x00000000   Lc  Abs  File  De 
+     85  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c
+                                    0x00000000   Lc  Abs  File  De 
+     86  i.RCC_AHB1PeriphClockCmd   0x080002e0   Lc    1  Sect  De 
+     87  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_rng.c
+                                    0x00000000   Lc  Abs  File  De 
+     88  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c
+                                    0x00000000   Lc  Abs  File  De 
+     89  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_rtc.c
+                                    0x00000000   Lc  Abs  File  De 
+     90  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c
+                                    0x00000000   Lc  Abs  File  De 
+     91  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_sai.c
+                                    0x00000000   Lc  Abs  File  De 
+     92  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sai.c
+                                    0x00000000   Lc  Abs  File  De 
+     93  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_sdio.c
+                                    0x00000000   Lc  Abs  File  De 
+     94  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c
+                                    0x00000000   Lc  Abs  File  De 
+     95  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_spdifrx.c
+                                    0x00000000   Lc  Abs  File  De 
+     96  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spdifrx.c
+                                    0x00000000   Lc  Abs  File  De 
+     97  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_spi.c
+                                    0x00000000   Lc  Abs  File  De 
+     98  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c
+                                    0x00000000   Lc  Abs  File  De 
+     99  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_syscfg.c
+                                    0x00000000   Lc  Abs  File  De 
+    100  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c
+                                    0x00000000   Lc  Abs  File  De 
+    101  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_tim.c
+                                    0x00000000   Lc  Abs  File  De 
+    102  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c
+                                    0x00000000   Lc  Abs  File  De 
+    103  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_usart.c
+                                    0x00000000   Lc  Abs  File  De 
+    104  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c
+                                    0x00000000   Lc  Abs  File  De 
+    105  ..\\..\\Libraries\\STM32F4xx_StdPeriph_Driver\\src\\stm32f4xx_wwdg.c
+                                    0x00000000   Lc  Abs  File  De 
+    106  ..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c
+                                    0x00000000   Lc  Abs  File  De 
+    107  ..\\..\\User\\main.c       0x00000000   Lc  Abs  File  De 
+    108  ..\..\User\main.c          0x00000000   Lc  Abs  File  De 
+    109  i.Delay                    0x080001e8   Lc    1  Sect  De 
+    110  i.main                     0x0800042c   Lc    1  Sect  De 
+    111  ..\\..\\User\\stm32f4xx_it.c
+                                    0x00000000   Lc  Abs  File  De 
+    112  ..\..\User\stm32f4xx_it.c  0x00000000   Lc  Abs  File  De 
+    113  i.BusFault_Handler         0x080001e4   Lc    1  Sect  De 
+    114  i.DebugMon_Handler         0x080001e6   Lc    1  Sect  De 
+    115  i.HardFault_Handler        0x0800027e   Lc    1  Sect  De 
+    116  i.MemManage_Handler        0x080002d8   Lc    1  Sect  De 
+    117  i.NMI_Handler              0x080002da   Lc    1  Sect  De 
+    118  i.PendSV_Handler           0x080002dc   Lc    1  Sect  De 
+    119  i.SVC_Handler              0x080002fc   Lc    1  Sect  De 
+    120  i.SysTick_Handler          0x080003b8   Lc    1  Sect  De 
+    121  i.UsageFault_Handler       0x0800040c   Lc    1  Sect  De 
+    122  ..\\..\\User\\led\\bsp_led.c
+                                    0x00000000   Lc  Abs  File  De 
+    123  ..\..\User\led\bsp_led.c   0x00000000   Lc  Abs  File  De 
+    124  i.LED_GPIO_Config          0x08000280   Lc    1  Sect  De 
+    125  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    126  .ARM.Collect$$$$00000000   0x08000188   Lc    1  Sect  De 
+    127  dc.s                       0x00000000   Lc  Abs  File  De 
+    128  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    129  .ARM.Collect$$$$00000001   0x08000188   Lc    1  Sect  De   0x4
+    130  .ARM.Collect$$$$00002712   0x08000198   Lc    1  Sect  De   0x4
+    131  __lit__00000000            0x08000198   Lc    1  Data  De   0x4
+    132  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    133  .ARM.Collect$$$$00000004   0x0800018c   Lc    1  Sect  De   0x4
+    134  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    135  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    136  .ARM.Collect$$$$00000008   0x08000190   Lc    1  Sect  De 
+    137  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    138  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    139  .ARM.Collect$$$$0000000A   0x08000190   Lc    1  Sect  De 
+    140  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    141  .ARM.Collect$$$$0000000B   0x08000190   Lc    1  Sect  De   0x8
+    142  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    143  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    144  .ARM.Collect$$$$0000000D   0x08000198   Lc    1  Sect  De 
+    145  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    146  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    147  .ARM.Collect$$$$0000000F   0x08000198   Lc    1  Sect  De 
+    148  ../clib/microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    149  init.s                     0x00000000   Lc  Abs  File  De 
+    150  .text                      0x080001c0   Lc    1  Sect  De   0x24
+    151  handlers.s                 0x00000000   Lc  Abs  File  De 
+    152  i.__scatterload_copy       0x0800040e   Lc    1  Sect  De   0xe
+    153  i.__scatterload_null       0x0800041c   Lc    1  Sect  De   0x2
+    154  i.__scatterload_zeroinit   0x0800041e   Lc    1  Sect  De   0xe
+    155  BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2
+                                    0x00000000   Gb  Abs   --   Hi 
+    156  __ARM_use_no_argv          0x00000000   Gb  Abs   --   Hi 
+    157  __Vectors_Size             0x00000188   Gb  Abs   --   Hi 
+    158  __Vectors                  0x08000000   Gb    1  Data  Hi   0x4
+    159  __Vectors_End              0x08000188   Gb    1  Data  Hi 
+    160  __main                     0x08000189   Gb    1  Code  Hi 
+    161  _main_stk                  0x08000189   Gb    1  Code  Hi 
+    162  _main_scatterload          0x0800018d   Gb    1  Code  Hi 
+    163  __main_after_scatterload   0x08000191   Gb    1  Code  Hi 
+    164  _main_clock                0x08000191   Gb    1  Code  Hi 
+    165  _main_cpp_init             0x08000191   Gb    1  Code  Hi 
+    166  _main_init                 0x08000191   Gb    1  Code  Hi 
+    167  __rt_final_cpp             0x08000199   Gb    1  Code  Hi 
+    168  __rt_final_exit            0x08000199   Gb    1  Code  Hi 
+    169  Reset_Handler              0x0800019d   Wk    1  Code  Hi   0x8
+    170  ADC_IRQHandler             0x080001b7   Wk    1  Code  Hi 
+    171  CAN1_RX0_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    172  CAN1_RX1_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    173  CAN1_SCE_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    174  CAN1_TX_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    175  CAN2_RX0_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    176  CAN2_RX1_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    177  CAN2_SCE_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    178  CAN2_TX_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    179  CRYP_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    180  DCMI_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    181  DMA1_Stream0_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    182  DMA1_Stream1_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    183  DMA1_Stream2_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    184  DMA1_Stream3_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    185  DMA1_Stream4_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    186  DMA1_Stream5_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    187  DMA1_Stream6_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    188  DMA1_Stream7_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    189  DMA2_Stream0_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    190  DMA2_Stream1_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    191  DMA2_Stream2_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    192  DMA2_Stream3_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    193  DMA2_Stream4_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    194  DMA2_Stream5_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    195  DMA2_Stream6_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    196  DMA2_Stream7_IRQHandler    0x080001b7   Wk    1  Code  Hi 
+    197  ETH_IRQHandler             0x080001b7   Wk    1  Code  Hi 
+    198  ETH_WKUP_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    199  EXTI0_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    200  EXTI15_10_IRQHandler       0x080001b7   Wk    1  Code  Hi 
+    201  EXTI1_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    202  EXTI2_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    203  EXTI3_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    204  EXTI4_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    205  EXTI9_5_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    206  FLASH_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    207  FPU_IRQHandler             0x080001b7   Wk    1  Code  Hi 
+    208  FSMC_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    209  HASH_RNG_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    210  I2C1_ER_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    211  I2C1_EV_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    212  I2C2_ER_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    213  I2C2_EV_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    214  I2C3_ER_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    215  I2C3_EV_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    216  OTG_FS_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    217  OTG_FS_WKUP_IRQHandler     0x080001b7   Wk    1  Code  Hi 
+    218  OTG_HS_EP1_IN_IRQHandler   0x080001b7   Wk    1  Code  Hi 
+    219  OTG_HS_EP1_OUT_IRQHandler  0x080001b7   Wk    1  Code  Hi 
+    220  OTG_HS_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    221  OTG_HS_WKUP_IRQHandler     0x080001b7   Wk    1  Code  Hi 
+    222  PVD_IRQHandler             0x080001b7   Wk    1  Code  Hi 
+    223  RCC_IRQHandler             0x080001b7   Wk    1  Code  Hi 
+    224  RTC_Alarm_IRQHandler       0x080001b7   Wk    1  Code  Hi 
+    225  RTC_WKUP_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    226  SDIO_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    227  SPI1_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    228  SPI2_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    229  SPI3_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    230  TAMP_STAMP_IRQHandler      0x080001b7   Wk    1  Code  Hi 
+    231  TIM1_BRK_TIM9_IRQHandler   0x080001b7   Wk    1  Code  Hi 
+    232  TIM1_CC_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    233  TIM1_TRG_COM_TIM11_IRQHandler
+                                    0x080001b7   Wk    1  Code  Hi 
+    234  TIM1_UP_TIM10_IRQHandler   0x080001b7   Wk    1  Code  Hi 
+    235  TIM2_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    236  TIM3_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    237  TIM4_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    238  TIM5_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    239  TIM6_DAC_IRQHandler        0x080001b7   Wk    1  Code  Hi 
+    240  TIM7_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    241  TIM8_BRK_TIM12_IRQHandler  0x080001b7   Wk    1  Code  Hi 
+    242  TIM8_CC_IRQHandler         0x080001b7   Wk    1  Code  Hi 
+    243  TIM8_TRG_COM_TIM14_IRQHandler
+                                    0x080001b7   Wk    1  Code  Hi 
+    244  TIM8_UP_TIM13_IRQHandler   0x080001b7   Wk    1  Code  Hi 
+    245  UART4_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    246  UART5_IRQHandler           0x080001b7   Wk    1  Code  Hi 
+    247  USART1_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    248  USART2_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    249  USART3_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    250  USART6_IRQHandler          0x080001b7   Wk    1  Code  Hi 
+    251  WWDG_IRQHandler            0x080001b7   Wk    1  Code  Hi 
+    252  __scatterload              0x080001c1   Gb    1  Code  Hi   0x1c
+    253  __scatterload_rt2          0x080001c1   Gb    1  Code  Hi 
+    254  BusFault_Handler           0x080001e5   Gb    1  Code  Hi   0x2
+    255  DebugMon_Handler           0x080001e7   Gb    1  Code  Hi   0x2
+    256  Delay                      0x080001e9   Gb    1  Code  Hi   0x12
+    257  GPIO_Init                  0x080001fb   Gb    1  Code  Hi   0x7c
+    258  GPIO_ResetBits             0x08000277   Gb    1  Code  Hi   0x4
+    259  GPIO_SetBits               0x0800027b   Gb    1  Code  Hi   0x4
+    260  HardFault_Handler          0x0800027f   Gb    1  Code  Hi   0x2
+    261  LED_GPIO_Config            0x08000281   Gb    1  Code  Hi   0x54
+    262  MemManage_Handler          0x080002d9   Gb    1  Code  Hi   0x2
+    263  NMI_Handler                0x080002db   Gb    1  Code  Hi   0x2
+    264  PendSV_Handler             0x080002dd   Gb    1  Code  Hi   0x2
+    265  RCC_AHB1PeriphClockCmd     0x080002e1   Gb    1  Code  Hi   0x16
+    266  SVC_Handler                0x080002fd   Gb    1  Code  Hi   0x2
+    267  SysTick_Handler            0x080003b9   Gb    1  Code  Hi   0x2
+    268  SystemInit                 0x080003bd   Gb    1  Code  Hi   0x3e
+    269  UsageFault_Handler         0x0800040d   Gb    1  Code  Hi   0x2
+    270  __scatterload_copy         0x0800040f   Gb    1  Code  Hi   0xe
+    271  __scatterload_null         0x0800041d   Gb    1  Code  Hi   0x2
+    272  __scatterload_zeroinit     0x0800041f   Gb    1  Code  Hi   0xe
+    273  main                       0x0800042d   Gb    1  Code  Hi   0xe2
+    274  Region$$Table$$Base        0x08000514   Gb    1   --   Hi 
+    275  Region$$Table$$Limit       0x08000524   Gb    1   --   Hi 
+    276  __initial_sp               0x20000400   Gb    2  Data  Hi 
+
+
+** Section #11 '.strtab' (SHT_STRTAB)
+    Size   : 8440 bytes
+
+
+** Section #12 '.note' (SHT_NOTE)
+    Size   : 24 bytes (alignment 4)
+
+
+** Section #13 '.comment' (SHT_PROGBITS)
+    Size   : 58524 bytes
+
+
+** Section #14 '.shstrtab' (SHT_STRTAB)
+    Size   : 156 bytes
+
+

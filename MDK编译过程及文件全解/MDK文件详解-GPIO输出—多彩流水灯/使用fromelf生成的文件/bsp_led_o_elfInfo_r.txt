@@ -1,0 +1,1973 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: bsp_led.o
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_REL (Relocatable object) (1)
+    Machine: EM_ARM (ARM)
+
+    Entry offset (in SHF_ENTRYSECT section): 0x00000000
+    Flags: None (0x05000000)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Built with
+    Component: ARM Compiler 5.05 update 2 (build 169) Tool: armasm [4d0f2f]
+    Component: ARM Compiler 5.05 update 2 (build 169) Tool: armlink [4d0f33]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 0 bytes (0x0)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 0
+    Section header entries: 231
+
+    Program header offset: 0 (0x00000000)
+    Section header offset: 478264 (0x00074c38)
+
+    Section header string table index: 228
+
+========================================================================
+
+** Section #1 '.rev16_text' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 4 bytes (alignment 4)
+    Address: 0x00000000
+
+
+** Section #2 '.revsh_text' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 4 bytes (alignment 4)
+    Address: 0x00000000
+
+
+** Section #3 '.rrx_text' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 6 bytes (alignment 4)
+    Address: 0x00000000
+
+
+** Section #4 'i.LED_GPIO_Config' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 88 bytes (alignment 4)
+    Address: 0x00000000
+
+
+** Section #175 '.reli.LED_GPIO_Config' (SHT_REL)
+    Size   : 32 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    4 relocations applied to section #4 'i.LED_GPIO_Config'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000008   10 R_ARM_THM_CALL          188 RCC_AHB1PeriphClockCmd   Ref
+      1  0x0000002a   10 R_ARM_THM_CALL          187 GPIO_Init                Ref
+      2  0x00000036   10 R_ARM_THM_CALL          187 GPIO_Init                Ref
+      3  0x00000042   10 R_ARM_THM_CALL          187 GPIO_Init                Ref
+
+
+** Section #5 '.debug_info' (SHT_PROGBITS)
+    Size   : 308 bytes
+
+
+** Section #176 '.rel.debug_info' (SHT_REL)
+    Size   : 48 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    6 relocations applied to section #5 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              35 __ARM_asm.debug_abbrev.1 #23 '.debug_abbrev'
+      1  0x000000f4    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+      2  0x000000f8    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+      3  0x000000fc    2 R_ARM_ABS32              12 [Anonymous Symbol]       #6 '.debug_line'
+      4  0x00000127    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+      5  0x0000012b    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+
+
+** Section #6 '.debug_line' (SHT_PROGBITS)
+    Size   : 100 bytes
+
+
+** Section #177 '.rel.debug_line' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #6 '.debug_line'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000056    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+
+
+** Section #7 '.debug_info' (SHT_PROGBITS)
+    Size   : 308 bytes
+
+
+** Section #178 '.rel.debug_info' (SHT_REL)
+    Size   : 48 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    6 relocations applied to section #7 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              35 __ARM_asm.debug_abbrev.1 #23 '.debug_abbrev'
+      1  0x000000f4    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+      2  0x000000f8    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+      3  0x000000fc    2 R_ARM_ABS32              14 [Anonymous Symbol]       #8 '.debug_line'
+      4  0x00000127    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+      5  0x0000012b    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+
+
+** Section #8 '.debug_line' (SHT_PROGBITS)
+    Size   : 100 bytes
+
+
+** Section #179 '.rel.debug_line' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #8 '.debug_line'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000056    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+
+
+** Section #9 '.debug_info' (SHT_PROGBITS)
+    Size   : 304 bytes
+
+
+** Section #180 '.rel.debug_info' (SHT_REL)
+    Size   : 48 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    6 relocations applied to section #9 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              35 __ARM_asm.debug_abbrev.1 #23 '.debug_abbrev'
+      1  0x000000f4    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+      2  0x000000f8    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+      3  0x000000fc    2 R_ARM_ABS32              16 [Anonymous Symbol]       #10 '.debug_line'
+      4  0x00000125    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+      5  0x00000129    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+
+
+** Section #10 '.debug_line' (SHT_PROGBITS)
+    Size   : 100 bytes
+
+
+** Section #181 '.rel.debug_line' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #10 '.debug_line'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000056    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+
+
+** Section #11 '.debug_frame' (SHT_PROGBITS)
+    Size   : 68 bytes
+
+
+** Section #182 '.rel.debug_frame' (SHT_REL)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    2 relocations applied to section #11 '.debug_frame'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000038    2 R_ARM_ABS32              17 [Anonymous Symbol]       #11 '.debug_frame'
+      1  0x0000003c    2 R_ARM_ABS32               8 .rev16_text              #1 '.rev16_text'
+
+
+** Section #12 '.debug_frame' (SHT_PROGBITS)
+    Size   : 68 bytes
+
+
+** Section #183 '.rel.debug_frame' (SHT_REL)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    2 relocations applied to section #12 '.debug_frame'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000038    2 R_ARM_ABS32              18 [Anonymous Symbol]       #12 '.debug_frame'
+      1  0x0000003c    2 R_ARM_ABS32               9 .revsh_text              #2 '.revsh_text'
+
+
+** Section #13 '.debug_frame' (SHT_PROGBITS)
+    Size   : 68 bytes
+
+
+** Section #184 '.rel.debug_frame' (SHT_REL)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    2 relocations applied to section #13 '.debug_frame'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000038    2 R_ARM_ABS32              19 [Anonymous Symbol]       #13 '.debug_frame'
+      1  0x0000003c    2 R_ARM_ABS32              10 .rrx_text                #3 '.rrx_text'
+
+
+** Section #14 '.debug_frame' (SHT_PROGBITS)
+    Size   : 84 bytes
+
+
+** Section #185 '.rel.debug_frame' (SHT_REL)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    2 relocations applied to section #14 '.debug_frame'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000038    2 R_ARM_ABS32              27 __ARM_grp_.debug_frame$13 #14 '.debug_frame'
+      1  0x0000003c    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+
+
+** Section #15 '.debug_info' (SHT_PROGBITS)
+    Size   : 284 bytes
+
+
+** Section #186 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #15 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000010f    2 R_ARM_ABS32              33 __ARM_grp_.debug_macinfo$4 #20 '.debug_macinfo'
+      2  0x00000113    2 R_ARM_ABS32              30 __ARM_grp_.debug_line$1  #17 '.debug_line'
+
+
+** Section #16 '.debug_info' (SHT_PROGBITS)
+    Size   : 352 bytes
+
+
+** Section #187 '.rel.debug_info' (SHT_REL)
+    Size   : 64 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    8 relocations applied to section #16 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000010f    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+      2  0x00000113    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+      3  0x00000117    2 R_ARM_ABS32              31 __ARM_grp_.debug_line$8  #18 '.debug_line'
+      4  0x00000132    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+      5  0x00000136    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+      6  0x0000013a    2 R_ARM_ABS32              32 __ARM_grp_.debug_loc$12  #19 '.debug_loc'
+      7  0x00000153    2 R_ARM_ABS32              61 __ARM_grp..debug_info$stm32f4xx_gpio.h$.2_Ms4000_N5ZfUS8K9u6_700000 #81 '.debug_info'
+
+
+** Section #17 '.debug_line' (SHT_PROGBITS)
+    Size   : 60 bytes
+
+
+** Section #18 '.debug_line' (SHT_PROGBITS)
+    Size   : 148 bytes
+
+
+** Section #188 '.rel.debug_line' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #18 '.debug_line'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x0000003d    2 R_ARM_ABS32              25 i.LED_GPIO_Config        #4 'i.LED_GPIO_Config'
+
+
+** Section #19 '.debug_loc' (SHT_PROGBITS)
+    Size   : 32 bytes
+
+
+** Section #20 '.debug_macinfo' (SHT_PROGBITS)
+    Size   : 1008 bytes
+
+
+** Section #21 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 38 bytes
+
+
+** Section #189 '.rel.debug_pubnames' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #21 '.debug_pubnames'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              29 __ARM_grp_.debug_info$9  #16 '.debug_info'
+
+
+** Section #22 '__ARM_asm.debug_abbrev.1' (SHT_GROUP)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #23 '.debug_abbrev' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 32 bytes
+
+
+** Section #24 '__ARM_grp.stdint.h.2_0G1000_EJPU_PN7o63_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #25 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 2196 bytes
+
+
+** Section #26 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 84 bytes
+
+
+** Section #27 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 780 bytes
+
+
+** Section #190 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #27 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000082    2 R_ARM_ABS32             155 __ARM_grp..debug_macinfo$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #25 '.debug_macinfo'
+      2  0x00000086    2 R_ARM_ABS32             119 __ARM_grp..debug_line$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #26 '.debug_line'
+
+
+** Section #28 '__ARM_grp.core_cmInstr.h.2_QY0000_IIwuPT8YGw8_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #29 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 988 bytes
+
+
+** Section #30 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 84 bytes
+
+
+** Section #31 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 304 bytes
+
+
+** Section #191 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #31 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000123    2 R_ARM_ABS32             152 __ARM_grp..debug_macinfo$core_cmInstr.h$.2_QY0000_IIwuPT8YGw8_300000 #29 '.debug_macinfo'
+      2  0x00000127    2 R_ARM_ABS32             116 __ARM_grp..debug_line$core_cmInstr.h$.2_QY0000_IIwuPT8YGw8_300000 #30 '.debug_line'
+
+
+** Section #32 '__ARM_grp.core_cmFunc.h.2_Mx1000_2CpkglVu1T2_O00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #33 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 96 bytes
+
+
+** Section #34 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 80 bytes
+
+
+** Section #35 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1400 bytes
+
+
+** Section #192 '.rel.debug_info' (SHT_REL)
+    Size   : 376 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    47 relocations applied to section #35 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000122    2 R_ARM_ABS32             151 __ARM_grp..debug_macinfo$core_cmFunc.h$.2_Mx1000_2CpkglVu1T2_O00000 #33 '.debug_macinfo'
+      2  0x00000126    2 R_ARM_ABS32             115 __ARM_grp..debug_line$core_cmFunc.h$.2_Mx1000_2CpkglVu1T2_O00000 #34 '.debug_line'
+      3  0x00000140    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000014f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000163    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000181    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x0000019c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001b6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001c5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x000001d6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x000001f0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x000001ff    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000210    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000022a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x00000239    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x0000024a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x00000264    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x00000273    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x00000293    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x000002ae    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x000002dc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x000002f6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x00000305    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x00000322    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x0000033d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x00000368    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x00000386    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x00000395    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x000003a9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x000003c8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x000003e3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x00000401    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x00000410    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     34  0x00000424    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     35  0x00000443    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     36  0x0000045e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     37  0x00000481    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     38  0x0000049f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     39  0x000004bf    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     40  0x000004ce    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     41  0x000004e4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     42  0x00000505    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     43  0x00000524    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     44  0x00000540    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     45  0x0000054f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     46  0x0000056b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #36 '__ARM_grp.core_cmSimd.h.2_wc1000_iv3kMlj6562_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #37 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1496 bytes
+
+
+** Section #38 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 80 bytes
+
+
+** Section #39 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 300 bytes
+
+
+** Section #193 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #39 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000122    2 R_ARM_ABS32             153 __ARM_grp..debug_macinfo$core_cmSimd.h$.2_wc1000_iv3kMlj6562_300000 #37 '.debug_macinfo'
+      2  0x00000126    2 R_ARM_ABS32             117 __ARM_grp..debug_line$core_cmSimd.h$.2_wc1000_iv3kMlj6562_300000 #38 '.debug_line'
+
+
+** Section #40 '__ARM_grp.core_cm4.h.2_r$7200_rBaxD86$Euf_D60000' (SHT_GROUP)
+    Size   : 20 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #41 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 21444 bytes
+
+
+** Section #42 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 180 bytes
+
+
+** Section #43 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 4616 bytes
+
+
+** Section #194 '.rel.debug_info' (SHT_REL)
+    Size   : 856 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    107 relocations applied to section #43 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000011f    2 R_ARM_ABS32             150 __ARM_grp..debug_macinfo$core_cm4.h$.2_r$7200_rBaxD86$Euf_D60000 #41 '.debug_macinfo'
+      2  0x00000123    2 R_ARM_ABS32             114 __ARM_grp..debug_line$core_cm4.h$.2_r$7200_rBaxD86$Euf_D60000 #42 '.debug_line'
+      3  0x00000138    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000147    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000015e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000016c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x0000017a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x00000188    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000196    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x000001a4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x000001bd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x000001de    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x000001f5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000020e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x0000022f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x00000246    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x00000255    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x0000026c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x0000027a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x00000289    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x00000297    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x000002a5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x000002b3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x000002c1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x000002cf    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x000002e8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x0000030b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x0000031d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x0000032e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x00000345    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x0000035e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x00000396    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x000003c8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     34  0x000003fa    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     35  0x0000042d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     36  0x00000460    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     37  0x00000492    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     38  0x000004bc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     39  0x000004c2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     40  0x000005e7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     41  0x00000610    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     42  0x00000631    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     43  0x000006df    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     44  0x00000701    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     45  0x0000072b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     46  0x00000754    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     47  0x0000077d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     48  0x000007bf    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     49  0x000007f4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     50  0x00000961    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     51  0x000009a8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     52  0x000009ef    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     53  0x00000a67    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     54  0x00000a8f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     55  0x00000ab8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     56  0x00000afd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     57  0x00000b4b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     58  0x00000b97    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     59  0x00000bd6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     60  0x00000cd2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     61  0x00000d90    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     62  0x00000dca    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     63  0x00000de8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     64  0x00000dff    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     65  0x00000e26    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     66  0x00000e35    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     67  0x00000e54    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     68  0x00000e78    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     69  0x00000e9e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     70  0x00000ea4    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     71  0x00000eb8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     72  0x00000edb    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     73  0x00000f04    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     74  0x00000f26    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     75  0x00000f2c    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     76  0x00000f40    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     77  0x00000f61    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     78  0x00000f6c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     79  0x00000f94    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     80  0x00000f9a    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     81  0x00000fae    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     82  0x00000fd1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     83  0x00000fd7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     84  0x00000feb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     85  0x00001001    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     86  0x0000101c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     87  0x00001034    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     88  0x0000104e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     89  0x00001064    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     90  0x00001087    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     91  0x00001096    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     92  0x000010e1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     93  0x000010fb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     94  0x00001111    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     95  0x00001118    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     96  0x0000114e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     97  0x00001154    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     98  0x00001169    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     99  0x00001185    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    100  0x0000118b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    101  0x0000119d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    102  0x000011bc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    103  0x000011cb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    104  0x000011d5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    105  0x000011f1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    106  0x00001200    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #44 '.debug_pubnames' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 35 bytes
+
+
+** Section #195 '.rel.debug_pubnames' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #44 '.debug_pubnames'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              42 __ARM_grp..debug_info$core_cm4.h$.2_r$7200_rBaxD86$Euf_D60000 #43 '.debug_info'
+
+
+** Section #45 '__ARM_grp.system_stm32f4xx.h.2_Wu2000_5CSOuGZ_0Ha_f00000' (SHT_GROUP)
+    Size   : 20 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #46 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 32 bytes
+
+
+** Section #47 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 108 bytes
+
+
+** Section #48 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 352 bytes
+
+
+** Section #196 '.rel.debug_info' (SHT_REL)
+    Size   : 32 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    4 relocations applied to section #48 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000013b    2 R_ARM_ABS32             183 __ARM_grp..debug_macinfo$system_stm32f4xx.h$.2_Wu2000_5CSOuGZ_0Ha_f00000 #46 '.debug_macinfo'
+      2  0x0000013f    2 R_ARM_ABS32             147 __ARM_grp..debug_line$system_stm32f4xx.h$.2_Wu2000_5CSOuGZ_0Ha_f00000 #47 '.debug_line'
+      3  0x00000155    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #49 '.debug_pubnames' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 38 bytes
+
+
+** Section #197 '.rel.debug_pubnames' (SHT_REL)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    1 relocations applied to section #49 '.debug_pubnames'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              75 __ARM_grp..debug_info$system_stm32f4xx.h$.2_Wu2000_5CSOuGZ_0Ha_f00000 #48 '.debug_info'
+
+
+** Section #50 '__ARM_grp.stm32f4xx.h.2_U4O100_4IR$75CTS33_E10000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #51 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 225568 bytes
+
+
+** Section #52 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 248 bytes
+
+
+** Section #53 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 11120 bytes
+
+
+** Section #198 '.rel.debug_info' (SHT_REL)
+    Size   : 808 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    101 relocations applied to section #53 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000134    2 R_ARM_ABS32             156 __ARM_grp..debug_macinfo$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #51 '.debug_macinfo'
+      2  0x00000138    2 R_ARM_ABS32             120 __ARM_grp..debug_line$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #52 '.debug_line'
+      3  0x00000721    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000072f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000073c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000746    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x00000759    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x0000076c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x0000077e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000791    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x000007a4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x000007ef    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x000007fd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000080a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x00000814    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x00000827    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x0000083a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x0000084c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x0000085f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x00000872    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x00000bde    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x00000c34    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x00000c72    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x00000c93    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x00000cb5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x00000cce    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x00000d42    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x00000d55    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x000010f5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x000011d7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x00001215    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x000012c4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x0000132c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     34  0x00001370    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     35  0x0000139e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     36  0x000013df    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     37  0x0000140e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     38  0x000014e0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     39  0x0000159e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     40  0x0000178e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     41  0x000017ff    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     42  0x00001965    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     43  0x000019bc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     44  0x000019da    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     45  0x000019f9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     46  0x00001a18    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     47  0x00001a35    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     48  0x00001a53    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     49  0x00001a71    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     50  0x00001a8f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     51  0x00001aaf    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     52  0x00001ace    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     53  0x00001b35    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     54  0x00001b8c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     55  0x00001bb4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     56  0x00001bdc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     57  0x00001cb8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     58  0x00001cfc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     59  0x00001ddd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     60  0x00001e08    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     61  0x00001e59    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     62  0x00001e82    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     63  0x00001ed9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     64  0x00001f06    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     65  0x00001f39    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     66  0x000020ca    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     67  0x0000236d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     68  0x00002398    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     69  0x000023ee    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     70  0x0000240c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     71  0x00002429    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     72  0x00002446    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     73  0x00002466    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     74  0x00002487    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     75  0x000024a8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     76  0x000024ca    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     77  0x000024ea    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     78  0x00002521    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     79  0x0000253f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     80  0x0000255e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     81  0x0000257d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     82  0x0000259a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     83  0x000025b8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     84  0x000025d8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     85  0x000025f8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     86  0x00002617    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     87  0x00002640    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     88  0x0000266a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     89  0x000026ba    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     90  0x000026d9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     91  0x000026f9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     92  0x00002717    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     93  0x0000274d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     94  0x0000276a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     95  0x00002788    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     96  0x000027a6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     97  0x000027c4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     98  0x000027e2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     99  0x00002801    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+    100  0x00002ac0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #54 '__ARM_grp.stm32f4xx_adc.h.2_gF1100_A9JOhSKxHSd_S10000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #55 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 13212 bytes
+
+
+** Section #56 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #57 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 680 bytes
+
+
+** Section #199 '.rel.debug_info' (SHT_REL)
+    Size   : 112 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    14 relocations applied to section #57 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             157 __ARM_grp..debug_macinfo$stm32f4xx_adc.h$.2_gF1100_A9JOhSKxHSd_S10000 #55 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             121 __ARM_grp..debug_line$stm32f4xx_adc.h$.2_gF1100_A9JOhSKxHSd_S10000 #56 '.debug_line'
+      3  0x00000152    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016c    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+      5  0x0000018c    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+      6  0x000001ae    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001cc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001e3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000200    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x0000022e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000245    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000260    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x0000027e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #58 '__ARM_grp.stm32f4xx_crc.h.2_Qx0000_T7xmzcB9Lj9_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #59 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 32 bytes
+
+
+** Section #60 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #61 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 320 bytes
+
+
+** Section #200 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #61 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             160 __ARM_grp..debug_macinfo$stm32f4xx_crc.h$.2_Qx0000_T7xmzcB9Lj9_300000 #59 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             124 __ARM_grp..debug_line$stm32f4xx_crc.h$.2_Qx0000_T7xmzcB9Lj9_300000 #60 '.debug_line'
+
+
+** Section #62 '__ARM_grp.stm32f4xx_dbgmcu.h.2_Eb1000_LF2nYfRBUl2_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #63 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1368 bytes
+
+
+** Section #64 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #65 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 324 bytes
+
+
+** Section #201 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #65 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000138    2 R_ARM_ABS32             163 __ARM_grp..debug_macinfo$stm32f4xx_dbgmcu.h$.2_Eb1000_LF2nYfRBUl2_300000 #63 '.debug_macinfo'
+      2  0x0000013c    2 R_ARM_ABS32             127 __ARM_grp..debug_line$stm32f4xx_dbgmcu.h$.2_Eb1000_LF2nYfRBUl2_300000 #64 '.debug_line'
+
+
+** Section #66 '__ARM_grp.stm32f4xx_dma.h.2_4a7000_zHBsQiRsQw8_l00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #67 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 11876 bytes
+
+
+** Section #68 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #69 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 724 bytes
+
+
+** Section #202 '.rel.debug_info' (SHT_REL)
+    Size   : 144 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    18 relocations applied to section #69 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             165 __ARM_grp..debug_macinfo$stm32f4xx_dma.h$.2_4a7000_zHBsQiRsQw8_l00000 #67 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             129 __ARM_grp..debug_line$stm32f4xx_dma.h$.2_4a7000_zHBsQiRsQw8_l00000 #68 '.debug_line'
+      3  0x0000014f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000018c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000019d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001b5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001d0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001e7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000207    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000223    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000235    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x0000024b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x00000261    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x0000027c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x00000295    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x000002b2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #70 '__ARM_grp.stm32f4xx_exti.h.2_U4Y000_H9iLb4gWjRf_J10000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #71 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1844 bytes
+
+
+** Section #72 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #73 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 608 bytes
+
+
+** Section #203 '.rel.debug_info' (SHT_REL)
+    Size   : 40 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    5 relocations applied to section #73 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             166 __ARM_grp..debug_macinfo$stm32f4xx_exti.h$.2_U4Y000_H9iLb4gWjRf_J10000 #71 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             130 __ARM_grp..debug_line$stm32f4xx_exti.h$.2_U4Y000_H9iLb4gWjRf_J10000 #72 '.debug_line'
+      3  0x00000203    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000023e    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+
+
+** Section #74 '__ARM_grp.stm32f4xx_flash.h.2_AJ4000_yj1J_JLaTze_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #75 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 8500 bytes
+
+
+** Section #76 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #77 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 520 bytes
+
+
+** Section #204 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #77 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000137    2 R_ARM_ABS32             167 __ARM_grp..debug_macinfo$stm32f4xx_flash.h$.2_AJ4000_yj1J_JLaTze_300000 #75 '.debug_macinfo'
+      2  0x0000013b    2 R_ARM_ABS32             131 __ARM_grp..debug_line$stm32f4xx_flash.h$.2_AJ4000_yj1J_JLaTze_300000 #76 '.debug_line'
+
+
+** Section #78 '__ARM_grp.stm32f4xx_gpio.h.2_Ms4000_N5ZfUS8K9u6_700000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #79 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 6276 bytes
+
+
+** Section #80 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #81 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 832 bytes
+
+
+** Section #205 '.rel.debug_info' (SHT_REL)
+    Size   : 32 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    4 relocations applied to section #81 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             169 __ARM_grp..debug_macinfo$stm32f4xx_gpio.h$.2_Ms4000_N5ZfUS8K9u6_700000 #79 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             133 __ARM_grp..debug_line$stm32f4xx_gpio.h$.2_Ms4000_N5ZfUS8K9u6_700000 #80 '.debug_line'
+      3  0x000002d7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #82 '__ARM_grp.stm32f4xx_i2c.h.2_U$4000_5ZNeN153bqa_c00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #83 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 7572 bytes
+
+
+** Section #84 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #85 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 488 bytes
+
+
+** Section #206 '.rel.debug_info' (SHT_REL)
+    Size   : 72 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    9 relocations applied to section #85 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             171 __ARM_grp..debug_macinfo$stm32f4xx_i2c.h$.2_U$4000_5ZNeN153bqa_c00000 #83 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             135 __ARM_grp..debug_line$stm32f4xx_i2c.h$.2_U$4000_5ZNeN153bqa_c00000 #84 '.debug_line'
+      3  0x00000152    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000164    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000017b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000194    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001a5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001c6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #86 '__ARM_grp.stm32f4xx_iwdg.h.2_k$0000_y_ug5YXW8Ve_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #87 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 976 bytes
+
+
+** Section #88 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #89 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 320 bytes
+
+
+** Section #207 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #89 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             172 __ARM_grp..debug_macinfo$stm32f4xx_iwdg.h$.2_k$0000_y_ug5YXW8Ve_300000 #87 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             136 __ARM_grp..debug_line$stm32f4xx_iwdg.h$.2_k$0000_y_ug5YXW8Ve_300000 #88 '.debug_line'
+
+
+** Section #90 '__ARM_grp.stm32f4xx_pwr.h.2_sE1000_nACkGL__M56_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #91 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 2292 bytes
+
+
+** Section #92 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #93 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 320 bytes
+
+
+** Section #208 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #93 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             173 __ARM_grp..debug_macinfo$stm32f4xx_pwr.h$.2_sE1000_nACkGL__M56_300000 #91 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             137 __ARM_grp..debug_line$stm32f4xx_pwr.h$.2_sE1000_nACkGL__M56_300000 #92 '.debug_line'
+
+
+** Section #94 '__ARM_grp.stm32f4xx_rcc.h.2_YC8000_wA7QCpuEeQ2_a00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #95 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 14984 bytes
+
+
+** Section #96 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #97 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 452 bytes
+
+
+** Section #209 '.rel.debug_info' (SHT_REL)
+    Size   : 56 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    7 relocations applied to section #97 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             174 __ARM_grp..debug_macinfo$stm32f4xx_rcc.h$.2_YC8000_wA7QCpuEeQ2_a00000 #95 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             138 __ARM_grp..debug_line$stm32f4xx_rcc.h$.2_YC8000_wA7QCpuEeQ2_a00000 #96 '.debug_line'
+      3  0x00000154    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000185    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000019e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #98 '__ARM_grp.stm32f4xx_rtc.h.2_Mp8000_9AnXLXvNuee_k00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #99 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 14404 bytes
+
+
+** Section #100 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #101 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 768 bytes
+
+
+** Section #210 '.rel.debug_info' (SHT_REL)
+    Size   : 136 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    17 relocations applied to section #101 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             176 __ARM_grp..debug_macinfo$stm32f4xx_rtc.h$.2_Mp8000_9AnXLXvNuee_k00000 #99 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             140 __ARM_grp..debug_line$stm32f4xx_rtc.h$.2_Mp8000_9AnXLXvNuee_k00000 #100 '.debug_line'
+      3  0x00000152    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000185    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001b4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001c9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001de    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001ef    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000220    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000233    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000245    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000257    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000029f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x000002c0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x000002de    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #102 '__ARM_grp.stm32f4xx_sdio.h.2_gw5000_bK_YPXcYqi6_n00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #103 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 8436 bytes
+
+
+** Section #104 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #105 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 832 bytes
+
+
+** Section #211 '.rel.debug_info' (SHT_REL)
+    Size   : 160 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    20 relocations applied to section #105 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             177 __ARM_grp..debug_macinfo$stm32f4xx_sdio.h$.2_gw5000_bK_YPXcYqi6_n00000 #103 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             141 __ARM_grp..debug_line$stm32f4xx_sdio.h$.2_gw5000_bK_YPXcYqi6_n00000 #104 '.debug_line'
+      3  0x00000153    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000018a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001a0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001c2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001d9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x0000020d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000224    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x0000023b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x0000024e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000261    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000029b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x000002b4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x000002d0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x000002ea    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x00000305    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x00000318    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #106 '__ARM_grp.stm32f4xx_spi.h.2_k15000_akQKVUOj0I2_l00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #107 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 7512 bytes
+
+
+** Section #108 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #109 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 700 bytes
+
+
+** Section #212 '.rel.debug_info' (SHT_REL)
+    Size   : 144 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    18 relocations applied to section #109 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             178 __ARM_grp..debug_macinfo$stm32f4xx_spi.h$.2_k15000_akQKVUOj0I2_l00000 #107 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             142 __ARM_grp..debug_line$stm32f4xx_spi.h$.2_k15000_akQKVUOj0I2_l00000 #108 '.debug_line'
+      3  0x00000151    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000163    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000179    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000018b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x0000019d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001ae    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001cd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x000001e3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x000001fe    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x0000022c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000242    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000025a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x00000272    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x00000289    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x0000029b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #110 '__ARM_grp.stm32f4xx_syscfg.h.2_EV1000_6JyYbdtcZzb_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #111 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 2840 bytes
+
+
+** Section #112 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #113 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 324 bytes
+
+
+** Section #213 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #113 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000138    2 R_ARM_ABS32             179 __ARM_grp..debug_macinfo$stm32f4xx_syscfg.h$.2_EV1000_6JyYbdtcZzb_300000 #111 '.debug_macinfo'
+      2  0x0000013c    2 R_ARM_ABS32             143 __ARM_grp..debug_line$stm32f4xx_syscfg.h$.2_EV1000_6JyYbdtcZzb_300000 #112 '.debug_line'
+
+
+** Section #114 '__ARM_grp.stm32f4xx_tim.h.2_MAa000_KJPpGhCXxCa_v00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #115 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 18712 bytes
+
+
+** Section #116 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #117 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1048 bytes
+
+
+** Section #214 '.rel.debug_info' (SHT_REL)
+    Size   : 224 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    28 relocations applied to section #117 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             180 __ARM_grp..debug_macinfo$stm32f4xx_tim.h$.2_MAa000_KJPpGhCXxCa_v00000 #115 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             144 __ARM_grp..debug_line$stm32f4xx_tim.h$.2_MAa000_KJPpGhCXxCa_v00000 #116 '.debug_line'
+      3  0x00000151    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000017e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000199    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001b8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001f0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000209    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000223    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000236    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x0000024e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000267    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x00000280    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x0000029a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x000002cd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x000002e5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x000002fe    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x00000317    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x0000032d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x00000363    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x0000037a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x00000391    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x000003a7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x000003ba    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x000003d5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x000003f2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #118 '__ARM_grp.stm32f4xx_usart.h.2_0$3000_OTl0CAgos5a_g00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #119 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 5428 bytes
+
+
+** Section #120 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #121 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 624 bytes
+
+
+** Section #215 '.rel.debug_info' (SHT_REL)
+    Size   : 104 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    13 relocations applied to section #121 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000137    2 R_ARM_ABS32             181 __ARM_grp..debug_macinfo$stm32f4xx_usart.h$.2_0$3000_OTl0CAgos5a_g00000 #119 '.debug_macinfo'
+      2  0x0000013b    2 R_ARM_ABS32             145 __ARM_grp..debug_line$stm32f4xx_usart.h$.2_0$3000_OTl0CAgos5a_g00000 #120 '.debug_line'
+      3  0x00000154    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000186    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000019c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001b0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001d3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000206    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x0000021a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x0000022e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000245    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #122 '__ARM_grp.stm32f4xx_wwdg.h.2_sM0000_gWBema3Hx8b_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #123 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 500 bytes
+
+
+** Section #124 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #125 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 320 bytes
+
+
+** Section #216 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #125 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             182 __ARM_grp..debug_macinfo$stm32f4xx_wwdg.h$.2_sM0000_gWBema3Hx8b_300000 #123 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             146 __ARM_grp..debug_line$stm32f4xx_wwdg.h$.2_sM0000_gWBema3Hx8b_300000 #124 '.debug_line'
+
+
+** Section #126 '__ARM_grp.misc.h.2_gLX000_ojIDwqi8Jq0_L10000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #127 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1232 bytes
+
+
+** Section #128 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 156 bytes
+
+
+** Section #129 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 472 bytes
+
+
+** Section #217 '.rel.debug_info' (SHT_REL)
+    Size   : 56 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    7 relocations applied to section #129 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000012c    2 R_ARM_ABS32             154 __ARM_grp..debug_macinfo$misc.h$.2_gLX000_ojIDwqi8Jq0_L10000 #127 '.debug_macinfo'
+      2  0x00000130    2 R_ARM_ABS32             118 __ARM_grp..debug_line$misc.h$.2_gLX000_ojIDwqi8Jq0_L10000 #128 '.debug_line'
+      3  0x0000014a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000175    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000199    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001b5    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+
+
+** Section #130 '__ARM_grp.stm32f4xx_cryp.h.2_0W2000_F6bKXpLrL70_B00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #131 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 2968 bytes
+
+
+** Section #132 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #133 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1128 bytes
+
+
+** Section #218 '.rel.debug_info' (SHT_REL)
+    Size   : 272 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    34 relocations applied to section #133 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             161 __ARM_grp..debug_macinfo$stm32f4xx_cryp.h$.2_0W2000_F6bKXpLrL70_B00000 #131 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             125 __ARM_grp..debug_line$stm32f4xx_cryp.h$.2_0W2000_F6bKXpLrL70_B00000 #132 '.debug_line'
+      3  0x00000151    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000168    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x0000017f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000195    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001c9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001e1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001f8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000210    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000227    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x0000023f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000256    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x0000026e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x000002a4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x000002bb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x000002d1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x000002e8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x00000321    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x00000335    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x00000349    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x0000035d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x00000371    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x00000384    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x00000397    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x000003aa    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x000003bd    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x000003d0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x000003e3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x000003f6    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x00000409    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x00000414    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x00000435    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #134 '__ARM_grp.stm32f4xx_hash.h.2_gf2000_caP5POdrOG9_f00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #135 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1860 bytes
+
+
+** Section #136 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #137 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 608 bytes
+
+
+** Section #219 '.rel.debug_info' (SHT_REL)
+    Size   : 96 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    12 relocations applied to section #137 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             170 __ARM_grp..debug_macinfo$stm32f4xx_hash.h$.2_gf2000_caP5POdrOG9_f00000 #135 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             134 __ARM_grp..debug_line$stm32f4xx_hash.h$.2_gf2000_caP5POdrOG9_f00000 #136 '.debug_line'
+      3  0x00000157    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000185    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x0000019f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001c7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x00000201    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000213    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000224    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x0000022f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #138 '__ARM_grp.stm32f4xx_rng.h.2_kO0000_SDJyqFWyei0_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #139 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 560 bytes
+
+
+** Section #140 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #141 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 320 bytes
+
+
+** Section #220 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #141 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             175 __ARM_grp..debug_macinfo$stm32f4xx_rng.h$.2_kO0000_SDJyqFWyei0_300000 #139 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             139 __ARM_grp..debug_line$stm32f4xx_rng.h$.2_kO0000_SDJyqFWyei0_300000 #140 '.debug_line'
+
+
+** Section #142 '__ARM_grp.stm32f4xx_can.h.2_MP_000_oQXg98RBQ2d_c20000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #143 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 7208 bytes
+
+
+** Section #144 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #145 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1072 bytes
+
+
+** Section #221 '.rel.debug_info' (SHT_REL)
+    Size   : 288 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    36 relocations applied to section #145 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             158 __ARM_grp..debug_macinfo$stm32f4xx_can.h$.2_MP_000_oQXg98RBQ2d_c20000 #143 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             122 __ARM_grp..debug_line$stm32f4xx_can.h$.2_MP_000_oQXg98RBQ2d_c20000 #144 '.debug_line'
+      3  0x00000151    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000163    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000174    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x00000185    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x00000196    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001a8    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+      9  0x000001ba    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     10  0x000001cc    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     11  0x000001de    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     12  0x000001f0    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     13  0x00000202    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     14  0x00000238    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x00000251    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x0000026f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x0000028c    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x000002ae    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x000002c8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x000002e0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x000002f9    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x00000317    2 R_ARM_ABS32              48 __ARM_grp..debug_info$stm32f4xx.h$.2_U4O100_4IR$75CTS33_E10000 #53 '.debug_info'
+     23  0x00000349    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x00000358    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x00000365    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x00000372    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x0000037f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x0000038a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x000003bb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x000003ca    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x000003d7    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x000003e4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x000003f1    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     34  0x000003fc    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     35  0x00000415    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #146 '__ARM_grp.stm32f4xx_dac.h.2_8q3000_MKuWXQpn_vb_a00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #147 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 4328 bytes
+
+
+** Section #148 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #149 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 464 bytes
+
+
+** Section #222 '.rel.debug_info' (SHT_REL)
+    Size   : 56 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    7 relocations applied to section #149 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000135    2 R_ARM_ABS32             162 __ARM_grp..debug_macinfo$stm32f4xx_dac.h$.2_8q3000_MKuWXQpn_vb_a00000 #147 '.debug_macinfo'
+      2  0x00000139    2 R_ARM_ABS32             126 __ARM_grp..debug_line$stm32f4xx_dac.h$.2_8q3000_MKuWXQpn_vb_a00000 #148 '.debug_line'
+      3  0x0000014f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000195    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001af    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #150 '__ARM_grp.stm32f4xx_dcmi.h.2_0Y2000_HvigMUo3vje_l00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #151 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 3176 bytes
+
+
+** Section #152 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #153 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 840 bytes
+
+
+** Section #223 '.rel.debug_info' (SHT_REL)
+    Size   : 144 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    18 relocations applied to section #153 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             164 __ARM_grp..debug_macinfo$stm32f4xx_dcmi.h$.2_0Y2000_HvigMUo3vje_l00000 #151 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             128 __ARM_grp..debug_line$stm32f4xx_dcmi.h$.2_0Y2000_HvigMUo3vje_l00000 #152 '.debug_line'
+      3  0x00000155    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x0000016f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000189    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001a2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001bb    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001d5    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x000001f4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000231    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x00000255    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000275    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000290    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x000002ce    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x000002ea    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x00000304    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x0000031f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #154 '__ARM_grp.stm32f4xx_fsmc.h.2_sF4000_9Vxi9Ji3vtd_E00000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #155 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 6252 bytes
+
+
+** Section #156 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 168 bytes
+
+
+** Section #157 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1692 bytes
+
+
+** Section #224 '.rel.debug_info' (SHT_REL)
+    Size   : 296 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    37 relocations applied to section #157 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000136    2 R_ARM_ABS32             168 __ARM_grp..debug_macinfo$stm32f4xx_fsmc.h$.2_sF4000_9Vxi9Ji3vtd_E00000 #155 '.debug_macinfo'
+      2  0x0000013a    2 R_ARM_ABS32             132 __ARM_grp..debug_line$stm32f4xx_fsmc.h$.2_sF4000_9Vxi9Ji3vtd_E00000 #156 '.debug_line'
+      3  0x0000015a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      4  0x00000178    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      5  0x00000194    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      6  0x000001b8    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      7  0x000001d2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      8  0x000001ec    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+      9  0x00000205    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     10  0x00000242    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     11  0x0000025f    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     12  0x00000278    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     13  0x00000296    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     14  0x000002b4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     15  0x000002d3    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     16  0x000002f4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     17  0x0000030b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     18  0x0000032a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     19  0x00000347    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     20  0x00000360    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     21  0x0000037b    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     22  0x00000394    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     23  0x00000415    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     24  0x00000431    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     25  0x0000044d    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     26  0x00000468    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     27  0x000004aa    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     28  0x000004c4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     29  0x000004e2    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     30  0x000004f4    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     31  0x0000050e    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     32  0x0000052a    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     33  0x00000545    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     34  0x000005d0    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     35  0x000005ec    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+     36  0x00000607    2 R_ARM_ABS32              47 __ARM_grp..debug_info$stdint.h$.2_0G1000_EJPU_PN7o63_300000 #27 '.debug_info'
+
+
+** Section #158 '__ARM_grp.stm32f4xx_conf.h.2_oP0000_Yer8_9H1JHc_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #159 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 164 bytes
+
+
+** Section #160 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 616 bytes
+
+
+** Section #161 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 284 bytes
+
+
+** Section #225 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #161 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000112    2 R_ARM_ABS32             159 __ARM_grp..debug_macinfo$stm32f4xx_conf.h$.2_oP0000_Yer8_9H1JHc_300000 #159 '.debug_macinfo'
+      2  0x00000116    2 R_ARM_ABS32             123 __ARM_grp..debug_line$stm32f4xx_conf.h$.2_oP0000_Yer8_9H1JHc_300000 #160 '.debug_line'
+
+
+** Section #162 '__ARM_grp.bsp_led.h.2_Mb1000_9uJhvWQBSv4_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #163 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1428 bytes
+
+
+** Section #164 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 132 bytes
+
+
+** Section #165 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 284 bytes
+
+
+** Section #226 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #165 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x00000111    2 R_ARM_ABS32             149 __ARM_grp..debug_macinfo$bsp_led.h$.2_Mb1000_9uJhvWQBSv4_300000 #163 '.debug_macinfo'
+      2  0x00000115    2 R_ARM_ABS32             113 __ARM_grp..debug_line$bsp_led.h$.2_Mb1000_9uJhvWQBSv4_300000 #164 '.debug_line'
+
+
+** Section #166 '__ARM_grp.bsp_led.c.2_gu0000_As2l_uEgM$d_300000' (SHT_GROUP)
+    Size   : 16 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #167 '.debug_macinfo' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 12 bytes
+
+
+** Section #168 '.debug_line' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 92 bytes
+
+
+** Section #169 '.debug_info' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 284 bytes
+
+
+** Section #227 '.rel.debug_info' (SHT_REL)
+    Size   : 24 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+    3 relocations applied to section #169 '.debug_info'
+
+    #      Offset    Relocation Type               Wrt Symbol                   Defined in
+    ========================================================================
+
+      0  0x00000006    2 R_ARM_ABS32              39 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 #171 '.debug_abbrev'
+      1  0x0000010f    2 R_ARM_ABS32             148 __ARM_grp..debug_macinfo$bsp_led.c$.2_gu0000_As2l_uEgM$d_300000 #167 '.debug_macinfo'
+      2  0x00000113    2 R_ARM_ABS32             112 __ARM_grp..debug_line$bsp_led.c$.2_gu0000_As2l_uEgM$d_300000 #168 '.debug_line'
+
+
+** Section #170 '__ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000' (SHT_GROUP)
+    Size   : 8 bytes (alignment 4)
+    Symbol table #174 '.symtab'
+
+
+** Section #171 '.debug_abbrev' (SHT_PROGBITS) [SHF_GROUP]
+    Size   : 1444 bytes
+
+
+** Section #172 '.arm_vfe_header' (SHT_PROGBITS)
+    Size   : 4 bytes (alignment 4)
+
+
+** Section #173 '.comment' (SHT_PROGBITS)
+    Size   : 1312 bytes
+
+
+** Section #174 '.symtab' (SHT_SYMTAB)
+    Size   : 3040 bytes (alignment 4)
+    String table #229 '.strtab'
+    Last local symbol no. 34
+
+
+** Section #228 '.shstrtab' (SHT_STRTAB)
+    Size   : 2241 bytes
+
+
+** Section #229 '.strtab' (SHT_STRTAB)
+    Size   : 10211 bytes
+
+
+** Section #230 '.ARM.attributes' (SHT_ARM_ATTRIBUTES)
+    Size   : 134 bytes
+
+
