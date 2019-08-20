@@ -78,7 +78,7 @@ void RecorderDemo(void)
 	if(Recorder.ucInput==0) //MIC 
 	{
 		Recorder.ucGain=50;          /* 缺省MIC增益  */
-		rec_wav.wChannels=1;         /* 缺省MIC单通道 */
+		rec_wav.wChannels=2;         /* 缺省MIC双通道 */
 	}
 	else                    //LINE
 	{
@@ -314,8 +314,8 @@ static void StartRecord(const char *filename)
 	{
 		/* 配置WM8978芯片，输入为Mic，输出为耳机 */
 		//wm8978_CfgAudioPath(MIC_LEFT_ON | ADC_ON, EAR_LEFT_ON | EAR_RIGHT_ON);
-		wm8978_CfgAudioPath(MIC_RIGHT_ON | ADC_ON, EAR_LEFT_ON | EAR_RIGHT_ON);
-		//wm8978_CfgAudioPath(MIC_LEFT_ON | MIC_RIGHT_ON | ADC_ON, EAR_LEFT_ON | EAR_RIGHT_ON);	
+		//wm8978_CfgAudioPath(MIC_RIGHT_ON | ADC_ON, EAR_LEFT_ON | EAR_RIGHT_ON);
+		wm8978_CfgAudioPath(MIC_LEFT_ON | MIC_RIGHT_ON | ADC_ON, EAR_LEFT_ON | EAR_RIGHT_ON);	
 		wm8978_SetMicGain(Recorder.ucGain);	
 	}
 		
