@@ -786,11 +786,6 @@
               <FilePath>..\..\User\flash\bsp_spi_flash.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_ili9806g_lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\lcd\bsp_ili9806g_lcd.c</FilePath>
-            </File>
-            <File>
               <FileName>fonts.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\font\fonts.c</FilePath>
@@ -801,14 +796,19 @@
               <FilePath>..\..\User\touch\bsp_i2c_touch.c</FilePath>
             </File>
             <File>
-              <FileName>gt5xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\touch\gt5xx.c</FilePath>
-            </File>
-            <File>
               <FileName>palette.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\touch\palette.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_nt35510_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\lcd\bsp_nt35510_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>gt9xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\touch\gt9xx.c</FilePath>
             </File>
           </Files>
         </Group>
