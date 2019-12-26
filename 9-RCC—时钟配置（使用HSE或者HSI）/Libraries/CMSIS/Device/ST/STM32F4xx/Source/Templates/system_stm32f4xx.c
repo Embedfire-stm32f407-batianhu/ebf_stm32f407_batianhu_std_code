@@ -511,7 +511,7 @@ void SystemInit(void)
          
   /* Configure the System clock source, PLL Multiplier and Divider factors, 
      AHB/APBx prescalers and Flash settings ----------------------------------*/
-  SetSysClock();
+//  SetSysClock();  /* 将这句注释掉，系统不进行对HSE的初始化，在main.c中即可正常进行对HSE的初始化，原因暂时未知 */
 
   /* Configure the Vector Table location add offset address ------------------*/
 #ifdef VECT_TAB_SRAM
