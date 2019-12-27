@@ -46,8 +46,9 @@ int main(void)
 	// 如果用户想修改系统时钟，可自行编写程序修改	
 	// 重新设置系统时钟，这时候可以选择使用HSE还是HSI
 	
-	/*  注意 ：在对HES重新初始化之前，需要将system_stm32f4xx.c中
-	 *   的line514：SetSysClock();注释掉,原因暂时不明
+	/*  注意 ：由于在 PLL 使能后主 PLL 配置参数便不可更改，而系统上电后会
+	 *  自动进行初始化，因此在对HES重新初始化之前，需要将system_stm32f4xx.c	  
+	 *  中的line514：SetSysClock();注释掉,否则HSE重新初始化之后不生效。
 	 */
 	
 	
