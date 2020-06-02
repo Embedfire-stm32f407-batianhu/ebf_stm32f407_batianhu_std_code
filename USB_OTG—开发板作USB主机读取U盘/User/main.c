@@ -41,7 +41,7 @@ char scan_path[255] = "0:";
 UINT fnum;            					  /* 文件成功读写数量 */
 BYTE ReadBuffer[1024]={0};        /* 读缓冲区 */
 BYTE WriteBuffer[] =              /* 写缓冲区*/
-"欢迎使用野火STM32 F429开发板 今天是个好日子，新建文件系统测试文件\r\n";  
+"欢迎使用野火STM32 F407开发板 今天是个好日子，新建文件系统测试文件\r\n";  
 
 
 KEY Key1,Key2;
