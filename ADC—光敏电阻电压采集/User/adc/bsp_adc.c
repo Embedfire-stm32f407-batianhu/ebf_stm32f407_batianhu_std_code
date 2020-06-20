@@ -95,7 +95,7 @@ static void Rheostat_ADC_Mode_Config(void)
 	// 独立ADC模式
   ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;
   // 时钟为fpclk x分频	
-  ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div2;
+  ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div4;
   // 禁止DMA直接访问模式	
   ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled;
   // 采样时间间隔	
