@@ -141,7 +141,7 @@ typedef enum
 
 #define GTP_DEBUG_ON         	1
 #define GTP_DEBUG_ARRAY_ON    1
-#define GTP_DEBUG_FUNC_ON   	0
+#define GTP_DEBUG_FUNC_ON   	1
 // Log define
 #define GTP_INFO(fmt,arg...)           printf("<<-GTP-INFO->> "fmt"\n",##arg)
 #define GTP_ERROR(fmt,arg...)          printf("<<-GTP-ERROR->> "fmt"\n",##arg)
