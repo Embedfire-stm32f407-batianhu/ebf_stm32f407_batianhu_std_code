@@ -1094,18 +1094,19 @@ void NT35510_SetPointPixel ( uint16_t usX, uint16_t usY )
  */
 static uint16_t NT35510_Read_PixelData ( void )	
 {	
-	uint16_t usR=0, usG=0, usB=0 ;
+	uint16_t us_RG=0, usB=0 ;
 
 	
-	NT35510_Write_Cmd ( 0x2E );   /* 读数据 */
+	NT35510_Write_Cmd ( 0x2E00 );   /* 读数据 */
+	//前读取三次结果去掉
+	us_RG = NT35510_Read_Data (); 	/*FIRST READ OUT DUMMY DATA*/
+	us_RG = NT35510_Read_Data (); 	/*FIRST READ OUT DUMMY DATA*/
+	us_RG = NT35510_Read_Data (); 	/*FIRST READ OUT DUMMY DATA*/
 	
-	usR = NT35510_Read_Data (); 	/*FIRST READ OUT DUMMY DATA*/
+	us_RG = NT35510_Read_Data ();  	/*READ OUT RED AND GREEN DATA  */
+	usB = NT35510_Read_Data ();  		/*READ OUT BLUE DATA*/
 	
-	usR = NT35510_Read_Data ();  	/*READ OUT RED DATA  */
-	usB = NT35510_Read_Data ();  	/*READ OUT BLUE DATA*/
-	usG = NT35510_Read_Data ();  	/*READ OUT GREEN DATA*/	
-	
-  return ( ( ( usR >> 11 ) << 11 ) | ( ( usG >> 10 ) << 5 ) | ( usB >> 11 ) );
+  return   (us_RG&0xF800)| ((us_RG<<3)&0x7E0) | (usB>>11) ;
 	
 }
 
