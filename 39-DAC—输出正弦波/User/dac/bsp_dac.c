@@ -88,13 +88,13 @@ static void DAC_TIM_Config(void)
 	
 	TIM_TimeBaseInitTypeDef    TIM_TimeBaseStructure;
 	
-	/* 使能TIM2时钟，TIM2CLK 为168M */
+	/* 使能TIM2时钟，TIM2CLK 为84M */
   RCC_APB1PeriphClockCmd(DAC_TIM_CLK, ENABLE);
 	
   /* TIM2基本定时器配置 */
  // TIM_TimeBaseStructInit(&TIM_TimeBaseStructure); 
   TIM_TimeBaseStructure.TIM_Period = 19;       									//定时周期 20  
-  TIM_TimeBaseStructure.TIM_Prescaler = 0x0;       							//预分频，不分频 168M / (0+1) = 168M
+  TIM_TimeBaseStructure.TIM_Prescaler = 0x0;       							//预分频，不分频 84M / (0+1) = 84M
   TIM_TimeBaseStructure.TIM_ClockDivision = 0x0;    						//时钟分频系数
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  	//向上计数模式
   TIM_TimeBaseInit(DAC_TIM, &TIM_TimeBaseStructure);
